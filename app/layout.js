@@ -1,14 +1,22 @@
-import { Geist, Geist_Mono } from "next/font/google";
+
+import { Lora, Plus_Jakarta_Sans } from "next/font/google";
+import AppLayout from "./AppLayout";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+export const lora = Lora({
   subsets: ["latin"],
+  style: ["normal", "italic"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-lora",
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+export const jakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
+  style: ["normal", "italic"],
+  weight: ["200", "300", "400", "500", "600", "700", "800"],
+  variable: "--font-jakarta",
+  display: "swap",
 });
 
 export const metadata = {
@@ -20,9 +28,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${jakarta.variable} ${lora.variable} antialiased`}
       >
-        {children}
+        <AppLayout>
+          {children}
+        </AppLayout>
       </body>
     </html>
   );

@@ -1,103 +1,94 @@
+"use client";
+import ChooseUs from "@/components/layouts/ChooseUs";
+import Feature from "@/components/layouts/Feature";
+import Form from "@/components/layouts/Form";
+import Reviews from "@/components/layouts/Reviews";
+import ServicesSec from "@/components/layouts/ServicesSec";
+import WhatWeDo from "@/components/layouts/WhatWeDo";
+import Button from "@/components/ui/Button";
+import Hero from "@/components/ui/Hero";
+import Subtitle from "@/components/ui/Subtitle";
+import Title from "@/components/ui/Title";
+import { MotionInView, variants } from "@/utils/motion";
+import { motion } from "motion/react";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <>
+      <Hero />
+      <section className="px-2.5">
+        <div className="flex flex-col gap-y-[60px] gap-x-5 items-center justify-center py-[100px]">
+          <div className="w-full md:max-w-[1060px] flex flex-col items-center gap-2.5 p-2.5 text-center">
+            <Subtitle>About me</Subtitle>
+            <div className="mb-[50px]">
+              <Title as="h2" italic="placeat, quo consectetur suscipit!">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Mollitia sit beatae Lorem ipsum dolor sit. placeat, quo
+                consectetur suscipit!
+              </Title>
+            </div>
+            <div>
+              <Button>Discover More</Button>
+            </div>
+          </div>
+          <div className="p-2.5 flex gap-[30px] flex-wrap w-full">
+            {[
+              {
+                image: "/images/s1.jpg",
+                mask: "flower.svg",
+                title: "Personalized Holistic Care",
+              },
+              {
+                image: "/images/s2.jpg",
+                mask: "flower2.svg",
+                title: "Comprehensive Wellness Plans",
+              },
+              {
+                image: "/images/s3.jpg",
+                mask: "brush_stroke.svg",
+                title: "Expert Health Guidance",
+              },
+            ].map((moveItem, idx) => (
+              <MotionInView
+                as={motion.div}
+                v={variants.fadeRise}
+                duration={1}
+                viewport={{ once: true, amount: 0.5 }}
+                key={idx}
+                delay={idx * 0.15}
+                className="md:w-[calc(33.33%_-_20px)] bg-light flex flex-col grow-0 shrink basis-auto p-10 rounded-3lg"
+              >
+                <div className="text-center">
+                  <figure className="w-[180px] mb-10 inline-block">
+                    <Image
+                      width={180}
+                      height={180}
+                      src={moveItem.image}
+                      alt={moveItem.title}
+                      className="mask-center mask-contain mask-no-repeat"
+                      style={{
+                        maskImage: `url(/images/elements/${moveItem.mask})`,
+                      }}
+                    />
+                  </figure>
+                  <h3 className="mb-[15px] text-xl">{moveItem.title}</h3>
+                  <p className="leading-[1.7em]">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Eum, distinctio.
+                  </p>
+                </div>
+              </MotionInView>
+            ))}
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </section>
+      <ServicesSec />
+      <Feature />
+      <WhatWeDo />
+      <ChooseUs />
+      <Reviews />
+      <Form />
+    </>
   );
 }

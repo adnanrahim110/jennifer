@@ -1,26 +1,98 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --font-jakarta: var(--font-jakarta);
+  --font-lora: var(--font-lora);
+
+  --color-primary: #efe7da;
+  --color-primary-50: #faf6f2;
+  --color-primary-100: #efe7da;
+  --color-primary-200: #e5d7c3;
+  --color-primary-300: #d4bc9d;
+  --color-primary-400: #c19c76;
+  --color-primary-500: #b4835b;
+  --color-primary-600: #a7714f;
+  --color-primary-700: #8b5b43;
+  --color-primary-800: #714c3b;
+  --color-primary-900: #5c3f32;
+  --color-primary-950: #311f19;
+
+  --color-light: #f7f3ed;
+  --color-dark: #5a5044;
+
+  --radius-2md: 10px;
+  --radius-3lg: 20px;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+@layer base {
+  * {
+    @apply box-border;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  body {
+    @apply bg-primary-100 font-jakarta overflow-x-clip text-[#868686] text-base;
+  }
+
+  section {
+    @apply px-5;
+  }
+
+  section>div {
+    @apply md:max-w-[1480px] mx-auto;
+  }
+
+  :is(h1, h2, h3, h4, h5, h6) {
+    @apply font-bold leading-[1.2em] text-dark;
+  }
+
+  :is(a, button, input, textarea, select) {
+    @apply outline-none focus:outline-none transition-all duration-300 ease-in-out;
+  }
+
+  img {
+    @apply max-w-full w-full h-auto align-middle inline-block;
+  }
+
+  :is(input, select, textarea) {
+    @apply border border-[#5A50441A] focus:border-primary-600 w-full block py-[17px] px-5 rounded-2md text-black resize-none text-base placeholder:text-[#868686]/90;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+
+  .reviews_slider .swiper-button-prev,
+  .reviews_slider .swiper-button-next {
+    top: auto !important;
+    bottom: 0;
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    font-weight: 900;
+    align-items: center;
+    color: var(--color-light) !important;
+    background-color: var(--color-primary-600);
+    transition: all 0.3s ease-in-out;
+
+    &::after {
+      font-size: 18px !important;
+    }
+
+    &:hover {
+      background-color: var(--color-light);
+    }
+
+    &:hover::after {
+      color: var(--color-primary-600);
+    }
+  }
+
+  .reviews_slider .swiper-button-next {
+    right: 0 !important;
+  }
+
+  .reviews_slider .swiper-button-prev {
+    left: 86.5% !important;
+  }
 }
