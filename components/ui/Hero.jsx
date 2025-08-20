@@ -2,6 +2,7 @@
 
 import { MotionInView, variants } from "@/utils/motion";
 import { motion } from "motion/react";
+import Image from "next/image";
 import React from "react";
 import Button from "./Button";
 import Subtitle from "./Subtitle";
@@ -39,6 +40,28 @@ const Hero = () => {
               <Button>Contact Now</Button>
               <Button variant="outline">My Services</Button>
             </MotionInView>
+          </div>
+          <div
+            className="md:w-1/2 py-2.5 px-[100px_100px] flex bg-contain bg-no-repeat bg-[url('/images/hero_right.png')] relative"
+            style={{ backgroundPosition: "top center" }}
+          >
+            <div
+              className="absolute z-[1] inset-0 bg-contain bg-no-repeat bg-[url('/images/hero_right.png')]"
+              style={{ backgroundPosition: "top center" }}
+            />
+            <div
+              className="absolute z-[1] inset-0 bg-contain bg-no-repeat bg-[url('/images/hero_right.png')]"
+              style={{ backgroundPosition: "top center" }}
+            />
+            <div className="text-center -mb-[85px] w-full relative z-[2]">
+              <Image
+                width={500}
+                height={806}
+                src="/images/hero-img.png"
+                alt=""
+                className="w-full max-w-full object-cover aspect-[1/1.61]"
+              />
+            </div>
           </div>
         </div>
       </div>
