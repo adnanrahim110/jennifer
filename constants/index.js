@@ -8,16 +8,12 @@ export const NAVIGATION_LINKS = [
     path: "/about"
   },
   {
-    name: "Services",
-    path: "/services"
-  },
-  {
     name: "Book",
     path: "/book"
   },
   {
-    name: "Blog",
-    path: "/blog"
+    name: "Blogs",
+    path: "/blogs"
   },
   {
     name: "Contact",

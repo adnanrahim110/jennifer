@@ -59,8 +59,8 @@ const Reviews = () => {
                   width={524}
                   height={384}
                   src="/images/reviews.jpg"
-                  outerClassName="rounded-3lg"
-                  className="h-[380px] object-cover"
+                  outerClassName="rounded-3lg w-full"
+                  className="object-cover"
                 />
               </div>
               <div className="md:w-3/5 p-2.5 pl-10">

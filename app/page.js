@@ -16,7 +16,13 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      <Hero />
+      <Hero
+        withImg
+        subtitle="Step into a world of calm and care"
+        italic="relaxation and expert care"
+        title="Experience the ultimate escape into relaxation and expert care"
+        text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus facilis sunt facere dicta exercitationem eum, quibusdam molestiae velit, sed iste ducimus cum deserunt! Ipsum ullam eligendi nulla optio rerum culpa dolores quaerat doloremque ex vel, iure quod minus voluptate sint quasi cumque? Quam blanditiis enim laboriosam illum non dolorum ut."
+      />
       <section className="px-2.5">
         <div className="flex flex-col gap-y-[60px] gap-x-5 items-center justify-center py-[100px]">
           <div className="w-full md:max-w-[1060px] flex flex-col items-center gap-2.5 p-2.5 text-center">
