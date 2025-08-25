@@ -4,12 +4,22 @@ import { MotionInView, variants } from "@/utils/motion";
 import { motion } from "motion/react";
 import Image from "next/image";
 import React from "react";
+import { FaCalendarDays, FaTags } from "react-icons/fa6";
 import Breadcrumbs from "../Breadcrumbs";
 import Button from "./Button";
 import Subtitle from "./Subtitle";
 import Title from "./Title";
 
-const Hero = ({ title, italic, text, subtitle, withImg = false }) => {
+const Hero = ({
+  title,
+  italic,
+  text,
+  subtitle,
+  withImg = false,
+  breadcrumbs = true,
+  date,
+  category,
+}) => {
   return (
     <section className="relative mt-5">
       <div className="px-2.5 rounded-3lg bg-cover bg-center bg-[url('/images/hero-bg.png')]">
@@ -25,9 +35,25 @@ const Hero = ({ title, italic, text, subtitle, withImg = false }) => {
             <Title as="h1" tone="light" italic={italic}>
               {title}
             </Title>
-            {!withImg && (
+            {!withImg && breadcrumbs && (
               <div className="flex w-full justify-center">
                 <Breadcrumbs light />
+              </div>
+            )}
+            {!withImg && !breadcrumbs && (
+              <div className="flex w-full justify-center gap-4 text-light mt-1 text-lg">
+                <span className="inline-flex items-center gap-4">
+                  <span>
+                    <FaCalendarDays />
+                  </span>
+                  <span>{date}</span>
+                </span>
+                <span className="inline-flex items-center gap-4">
+                  <span>
+                    <FaTags />
+                  </span>
+                  <span>{category}</span>
+                </span>
               </div>
             )}
             {withImg && (

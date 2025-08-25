@@ -16,7 +16,7 @@ const BlogsPage = () => {
                 <div className="h-[calc(100%_-_30px)] mb-[30px] group">
                   <div>
                     <Link
-                      href="/"
+                      href="/blogs/1"
                       className="block rounded-3lg overflow-hidden mb-5"
                     >
                       <Img
@@ -31,7 +31,7 @@ const BlogsPage = () => {
                   <div>
                     <div className="mb-5">
                       <h3 className="text-dark text-xl leading-[1.4em] [word-break:break-word]">
-                        <Link href="/">
+                        <Link href="/blogs/1">
                           Lorem ipsum dolor sit amet consectetur adipisicing elit.
                           Mollitia sit beatae
                         </Link>
@@ -39,7 +39,7 @@ const BlogsPage = () => {
                     </div>
                     <div className="relative font-bold leading-normal capitalize transition-all duration-[400ms] ease-in-out">
                       <Link
-                        href="/"
+                        href="/blogs/1"
                         className="align-bottom text-primary-600 group/link hover:text-dark transition-all duration-[400ms] ease-in-out"
                       >
                         Read more
