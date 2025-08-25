@@ -115,29 +115,14 @@ const BlogDetailPage = () => {
                   </p>
                 </div>
                 <div className="flex flex-wrap -mx-[15px] *:w-full *:grow-0 *:shrink-0 *:basis-auto *:px-[15px] *:relative">
-                  <div className="lg:w-8/12">
-                    <div>
-                      <div className="inline-flex text-xl font-semibold text-dark items-center flex-wrap gap-[15px]">
-                        Tags:
-                        <span className="inline-block text-base font-medium leading-none capitalize bg-primary-600 text-light rounded-2md py-3 px-5">
-                          Health
-                        </span>
-                        <span className="inline-block text-base font-medium leading-none capitalize bg-primary-600 text-light rounded-2md py-3 px-5">
-                          Fitness
-                        </span>
-                        <span className="inline-block text-base font-medium leading-none capitalize bg-primary-600 text-light rounded-2md py-3 px-5">
-                          Yoga
-                        </span>
-                      </div>
-                    </div>
-                  </div>
                   <div className="lg:w-4/12">
-                    <div className="text-right">
+                    <div className="text-xl font-semibold text-dark inline-flex items-center gap-[15px]">
+                      Share:
                       <ul className="*:inline-block *:not-last:mr-3">
                         <li>
                           <a
                             href="#"
-                            className="flex items-center justify-center text-center bg-primary-600 text-light rounded-full text-xl size-10 transition-all duration-[400ms] ease-in-out"
+                            className="flex items-center justify-center text-center bg-primary-600 hover:bg-dark text-light rounded-full text-xl size-10 transition-all duration-[400ms] ease-in-out"
                           >
                             <FaFacebookF />
                           </a>
@@ -145,7 +130,7 @@ const BlogDetailPage = () => {
                         <li>
                           <a
                             href="#"
-                            className="flex items-center justify-center text-center bg-primary-600 text-light rounded-full text-xl size-10 transition-all duration-[400ms] ease-in-out"
+                            className="flex items-center justify-center text-center bg-primary-600 hover:bg-dark text-light rounded-full text-xl size-10 transition-all duration-[400ms] ease-in-out"
                           >
                             <FaInstagram />
                           </a>
@@ -153,7 +138,7 @@ const BlogDetailPage = () => {
                         <li>
                           <a
                             href="#"
-                            className="flex items-center justify-center text-center bg-primary-600 text-light rounded-full text-xl size-10 transition-all duration-[400ms] ease-in-out"
+                            className="flex items-center justify-center text-center bg-primary-600 hover:bg-dark text-light rounded-full text-xl size-10 transition-all duration-[400ms] ease-in-out"
                           >
                             <FaShareNodes />
                           </a>
