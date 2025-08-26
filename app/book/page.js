@@ -23,21 +23,18 @@ const BookPage = () => {
             <div className="md:w-8/12">
               <div className="flex flex-col items-start gap-2.5 lg: pr-10">
                 <Subtitle>About Book</Subtitle>
-                <Title>Lorem ipsum dolor sit amet.</Title>
+                <Title>Delicious Sweet & Savory Scones for Every Season</Title>
                 <p className="mt-4 mb-8 text-neutral-600 text-lg">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Praesentium, perspiciatis repellat officia iusto distinctio
-                  labore tempora a nemo ut adipisci sed assumenda sint fugiat
-                  eveniet, quis nobis quam ratione, optio vitae dolore? Eveniet,
-                  dolorum voluptate temporibus nam perspiciatis enim possimus
-                  magnam vel! Repudiandae molestiae accusamus animi consectetur.
-                  Hic deserunt, nesciunt quae, voluptates necessitatibus quas
-                  magni itaque eligendi ducimus ab totam officiis enim aliquid,
-                  nemo dicta placeat. Alias iste asperiores quibusdam error
-                  voluptatum odit reiciendis ut? Quo porro voluptatibus
-                  exercitationem praesentium tenetur quis eius vel, dolore vitae
-                  assumenda sint, sit, ullam ad impedit maiores facere est
-                  voluptate perferendis laborum aut iusto.
+                  Seasonal Scones is more than a recipe collection, it’s a story
+                  of comfort and craft, weaving together history, tradition, and
+                  modern tastes. With chapters dedicated to spring, summer,
+                  autumn, and winter, the book captures the essence of each
+                  season through thoughtfully designed scones, both sweet and
+                  savory. Allergy-friendly swaps, pantry guides, and timeless
+                  techniques ensure every baker, from novice to expert, can
+                  create golden, tender results. Beyond recipes, it’s a guide to
+                  savoring life’s small rituals, tea by the window, gatherings
+                  with loved ones, or quiet mornings at home.
                 </p>
                 <div>
                   <Button>Buy Now</Button>

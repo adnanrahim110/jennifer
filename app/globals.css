@@ -4,21 +4,21 @@
   --font-jakarta: var(--font-jakarta);
   --font-lora: var(--font-lora);
 
-  --color-primary: #efe7da;
-  --color-primary-50: #faf6f2;
-  --color-primary-100: #efe7da;
-  --color-primary-200: #e5d7c3;
-  --color-primary-300: #d4bc9d;
-  --color-primary-400: #c19c76;
-  --color-primary-500: #b4835b;
-  --color-primary-600: #a7714f;
-  --color-primary-700: #8b5b43;
-  --color-primary-800: #714c3b;
-  --color-primary-900: #5c3f32;
-  --color-primary-950: #311f19;
+  --color-primary: #599441;
+  --color-primary-50: #f6faf3;
+  --color-primary-100: #e9f5e3;
+  --color-primary-200: #d2eac8;
+  --color-primary-300: #afd79e;
+  --color-primary-400: #83bd6b;
+  --color-primary-500: #599441;
+  --color-primary-600: #4d8336;
+  --color-primary-700: #3e682d;
+  --color-primary-800: #345328;
+  --color-primary-900: #2b4522;
+  --color-primary-950: #13250e;
 
   --color-light: #f7f3ed;
-  --color-dark: #5a5044;
+  --color-dark: #345328;
 
   --radius-2md: 10px;
   --radius-3lg: 20px;
@@ -30,7 +30,7 @@
   }
 
   body {
-    @apply bg-primary-100 font-jakarta overflow-x-clip text-[#868686] text-base;
+    @apply bg-[#efe7da] font-jakarta overflow-x-clip text-[#868686] text-base;
   }
 
   section {

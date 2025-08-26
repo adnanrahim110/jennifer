@@ -32,78 +32,67 @@ const AboutPage = () => {
             <div className="md:w-1/2 flex p-2.5 flex-col gap-2.5 items-start">
               <Subtitle>My approach</Subtitle>
               <div className="mb-2.5">
-                <Title italic="healthier tomorrow">
-                  Inspiring wellness, shaping a healthier tomorrow
+                <Title italic="About Jennifer Richards">
+                  Flour, Family, and Flavor: About Jennifer Richards
                 </Title>
               </div>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ea
-                incidunt suscipit nihil delectus doloremque ut modi dolor
-                aliquid deserunt. Lorem ipsum dolor sit amet consectetur
-                adipisicing elit.
+                Jennifer Richards’ passion for baking was sparked under the
+                guidance of her mentor, Mrs. Sheila Gray, who taught her that
+                food is both sustenance and story. Over the years, she explored
+                many paths, writer, caregiver, and wellness practitioner, but
+                the rhythm of the kitchen always called her back. For Jennifer,
+                baking is an act of intention: a way to honor the seasons,
+                embrace simplicity, and share something meaningful. Seasonal
+                Scones is her way of inviting readers into that tradition,
+                offering recipes that are as adaptable as they are heartfelt.
               </p>
-              <div className="flex flex-col grow-0 shrink basis-auto mt-[30px] w-full">
+              <div className="flex flex-col grow-0 shrink basis-auto mt-16 w-full">
                 <Img
                   outerClassName="rounded-3lg w-full"
                   width={635}
                   height={437}
-                  src="/images/approach-img-1.jpg"
+                  src="/images/approach-img-2.jpg"
                 />
               </div>
             </div>
-            <div className="md:w-1/2 flex flex-col p-2.5 gap-y-10 gap-x-5 grow-0 shrink basis-auto pl-[35px]">
+            <div className="md:w-1/2 flex flex-col p-2.5 gap-y-10 gap-x-5 grow-0 shrink basis-auto pl-7">
               <Img
                 outerClassName="rounded-3lg w-full"
-                src="/images/approach-img-2.jpg"
+                src="/images/approach-img-1.jpg"
                 width={605}
                 height={340}
               />
-              <div className="flex flex-col gap-[30px]">
-                <div className="w-full flex items-start">
-                  <div className="grow-0 shrink-0 basis-auto relative">
-                    <div className="mr-5 flex items-center justify-center size-[50px] text-2xl rounded-full bg-primary-600 text-light">
-                      <SVG svg="stack" />
+              <div className="flex flex-col gap-5">
+                {[
+                  {
+                    title: "Rooted in the Kitchen",
+                    icon: "stack",
+                    text: "Jennifer Richards grew up with her hands in flour and her heart in the kitchen, where she discovered that cooking is more than a chore—it’s a craft and a comfort.",
+                  },
+                  {
+                    title: "A Life of Many Hats",
+                    icon: "trippleCircle",
+                    text: "She’s been a food writer, worked in animal welfare, bookkeeping, and massage therapy, yet always returned to the joy of creating meals with simple tools and seasonal flavors.",
+                  },
+                  {
+                    title: "Baking with Intention",
+                    icon: "cube",
+                    text: "This cookbook is her way of sharing those roots, celebrating the seasons, savoring each bake, and offering readers the warmth of something homemade.",
+                  },
+                ].map((item, index) => (
+                  <div key={index} className="w-full flex items-start">
+                    <div className="grow-0 shrink-0 basis-auto relative">
+                      <div className="mr-5 flex items-center justify-center size-[50px] text-2xl rounded-full bg-primary-600 text-light">
+                        <SVG svg={item.icon} />
+                      </div>
+                    </div>
+                    <div>
+                      <h3 className="text-dark text-xl mb-1">{item.title}</h3>
+                      <p className="leading-[1.7em] text-sm">{item.text}</p>
                     </div>
                   </div>
-                  <div>
-                    <h3 className="text-dark text-xl mb-2.5">Lorem ipsum</h3>
-                    <p className="leading-[1.7em]">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Veritatis dicta eum minima ipsa at ipsam suscipit
-                      expedita.
-                    </p>
-                  </div>
-                </div>
-                <div className="w-full flex items-start">
-                  <div className="grow-0 shrink-0 basis-auto relative">
-                    <div className="mr-5 flex items-center justify-center size-[50px] text-2xl rounded-full bg-primary-600 text-light">
-                      <SVG svg="trippleCircle" />
-                    </div>
-                  </div>
-                  <div>
-                    <h3 className="text-dark text-xl mb-2.5">Lorem ipsum</h3>
-                    <p className="leading-[1.7em]">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Veritatis dicta eum minima ipsa at ipsam suscipit
-                      expedita.
-                    </p>
-                  </div>
-                </div>
-                <div className="w-full flex items-start">
-                  <div className="grow-0 shrink-0 basis-auto relative">
-                    <div className="mr-5 flex items-center justify-center size-[50px] text-2xl rounded-full bg-primary-600 text-light">
-                      <SVG svg="cube" />
-                    </div>
-                  </div>
-                  <div>
-                    <h3 className="text-dark text-xl mb-2.5">Lorem ipsum</h3>
-                    <p className="leading-[1.7em]">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Veritatis dicta eum minima ipsa at ipsam suscipit
-                      expedita.
-                    </p>
-                  </div>
-                </div>
+                ))}
               </div>
             </div>
           </div>

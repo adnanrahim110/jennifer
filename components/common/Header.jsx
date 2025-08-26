@@ -11,9 +11,11 @@ const Header = () => {
   const path = usePathname();
   return (
     <header className="px-5 absolute left-0 z-[100] top-auto w-full">
-      <div className="flex border-b border-b-[#F7F3ED1A] py-5 relative w-full flex-wrap items-center *:p-2.5">
-        <div className="md:w-[15%]">
-          <Link href="/">Jennifer</Link>
+      <div className="flex border-b border-b-[#F7F3ED1A] py-1 relative w-full flex-wrap items-center *:p-2.5">
+        <div className="md:w-[15%] pb-1!">
+          <Link href="/">
+            <img src="/images/logo-w.png" alt="" />
+          </Link>
         </div>
         <div className="md:w-[64%]">
           <ul className="flex justify-center flex-wrap gap-1">

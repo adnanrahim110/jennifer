@@ -19,37 +19,42 @@ const ServicesSec = () => {
           <div className="flex flex-col items-center flex-wrap gap-y-10 gap-x-5 py-[100px]">
             <div className="flex flex-col items-center md:w-[850px] p-2.5 gap-2.5 mb-5 text-center">
               <Subtitle tone="light">Featured services</Subtitle>
-              <Title tone="light" as="h2" italic="your body">
-                A curated collection of treatments to rejuvenate your body
+              <Title
+                tone="light"
+                as="h2"
+                italic="Jennifer Richards’s kitchen to yours."
+              >
+                Bakes that bring warmth, flavor, and heart from Jennifer
+                Richards’s kitchen to yours.
               </Title>
             </div>
             <div className="p-2.5 flex flex-wrap gap-[30px] w-full">
               {[
                 {
-                  title: "Signature Facials",
-                  text: "This treatment deeply cleanses, exfoliates, and hydrates the skin, leaving you with a radiant complexion.",
-                  points: ["Skin Soul Shine", "Your skin, only better."],
+                  title: "Seasonal Recipes",
+                  text: "These scones highlight spring, summer, autumn, and winter with flavors that match each season.",
+                  points: ["Sweet & savory creations", "Fresh ingredients"],
                   url: "",
                   svg: "trippleCircle",
                 },
                 {
-                  title: "Therapeutic Massage",
-                  text: "This treatment deeply cleanses, exfoliates, and hydrates the skin, leaving you with a radiant complexion.",
-                  points: ["Relaxation", "Improved circulation"],
+                  title: "Tips & Techniques",
+                  text: "Simple guidance for tender, flaky scones, perfect for beginners and experienced bakers alike.",
+                  points: ["Step-by-step methods", "Proven success tips"],
                   url: "",
                   svg: "dice",
                 },
                 {
-                  title: "Body Scrubs",
-                  text: "This treatment deeply cleanses, exfoliates, and hydrates the skin, leaving you with a radiant complexion.",
-                  points: ["Deep hydration", "Skin rejuvenation"],
+                  title: "Allergy-Friendly Swaps",
+                  text: "Adaptable recipes that include gluten-free, dairy-free, and egg-free options for every baker.",
+                  points: ["Inclusive choices", "Easy substitutions"],
                   url: "",
                   svg: "diamond",
                 },
                 {
-                  title: "Reflexology",
-                  text: "This treatment deeply cleanses, exfoliates, and hydrates the skin, leaving you with a radiant complexion.",
-                  points: ["Targeted solutions", "Holistic approach"],
+                  title: "Author’s Journey",
+                  text: "Jennifer’s path from early lessons in flour and butter to writing a cookbook full of love.",
+                  points: ["Rooted in tradition", "Shared with heart"],
                   url: "",
                   svg: "target",
                 },
@@ -63,7 +68,7 @@ const ServicesSec = () => {
                   delay={idx * 0.15}
                   onMouseEnter={() => setIsActive(idx)}
                   className={cn(
-                    "bg-light md:w-[calc(25%_-_22.5px)] flex flex-col relative overflow-hidden p-10 rounded-3lg gap-[30px]",
+                    "bg-light md:w-[calc(25%_-_22.5px)] flex flex-col relative overflow-hidden p-7 rounded-3lg gap-[30px]",
                     "before:absolute before:bg-primary-600 before:left-0 before:right-0 before:w-full before:transition-all before:duration-[450ms] before:ease-in-out",
                     isActive === idx
                       ? "before:top-0 before:h-full before:rounded-none"

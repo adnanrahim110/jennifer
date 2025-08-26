@@ -15,7 +15,7 @@ const Reviews = () => {
   return (
     <section>
       <div>
-        <div className="px-2.5 bg-[#636A55] bg-cover bg-no-repeat bg-center bg-[url('/images/reviews-bg.png')] rounded-3lg">
+        <div className="px-2.5 bg-[#556B2F] bg-cover bg-no-repeat bg-center bg-[url('/images/reviews-bg.png')] rounded-3lg">
           <div className="flex flex-col w-full flex-wrap gap-y-[60px] gap-x-5 py-[100px]">
             <div className="flex w-full items-center p-2.5">
               <div className="md:w-1/2 flex flex-col items-start gap-2.5">

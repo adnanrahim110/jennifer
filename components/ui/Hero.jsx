@@ -83,14 +83,14 @@ const Hero = ({
               className="md:w-1/2 py-2.5 px-[100px_100px] flex bg-contain bg-no-repeat bg-[url('/images/hero_right.png')] relative"
               style={{ backgroundPosition: "top center" }}
             >
-              <div
+              {/* <div
                 className="absolute z-[1] inset-0 bg-contain bg-no-repeat bg-[url('/images/hero_right.png')]"
                 style={{ backgroundPosition: "top center" }}
               />
               <div
                 className="absolute z-[1] inset-0 bg-contain bg-no-repeat bg-[url('/images/hero_right.png')]"
                 style={{ backgroundPosition: "top center" }}
-              />
+              /> */}
               <div className="text-center -mb-[85px] w-full relative z-[2]">
                 <Image
                   width={500}

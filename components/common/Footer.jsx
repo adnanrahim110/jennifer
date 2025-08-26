@@ -11,26 +11,13 @@ const Footer = () => {
         <div className="flex flex-col gap-y-10 pt-[100px]">
           <div className="flex w-full">
             <div className="p-2.5 flex flex-col gap-[30px] md:w-1/2 pr-20">
-              <div>Jennifer</div>
+              <div>
+                <img src="/images/logo-w.png" className="w-3xs" alt="" />
+              </div>
               <p className="text-light">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus
                 hic nulla maiores quos error perferendis?
               </p>
-              <div className="flex w-full gap-x-10 gap-y-[30px]">
-                <Link href="/" className="inline-block w-auto">
-                  <div className="flex items-center">
-                    <div className="grow-0 shrink-0 basis-auto relative">
-                      <div className="inline-flex mr-[15px] size-[50px] text-2xl leading-12 justify-center items-center bg-primary-600 text-light rounded-full">
-                        <GoMail />
-                      </div>
-                    </div>
-                    <div>
-                      <h3 className="mb-[5px] text-light text-xl">E-Mail Me</h3>
-                      <p className="text-light">info@jennifer.com</p>
-                    </div>
-                  </div>
-                </Link>
-              </div>
             </div>
             <div className="md:w-1/2 p-2.5 flex flex-col gap-[15px]">
               <h3 className="text-light text-xl">Subscribe My Newsletter</h3>
@@ -39,7 +26,7 @@ const Footer = () => {
                 unde. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Aut, culpa.
               </p>
-              <div className="mt-[15px]">
+              <div className="mt-5">
                 <form>
                   <div className="flex rounded-2md has-focus-within:border-white/50 transition-all duration-300 ease-in-out border border-[#F7F3ED1A]">
                     <input
@@ -56,7 +43,21 @@ const Footer = () => {
                   </div>
                 </form>
               </div>
-              <div className="mt-[25px] flex gap-[15px] items-center justify-start flex-wrap"></div>
+              <div className="flex w-full gap-x-10 gap-y-[30px]">
+                <Link href="/" className="inline-block w-auto">
+                  <div className="flex items-center">
+                    <div className="grow-0 shrink-0 basis-auto relative">
+                      <div className="inline-flex mr-[15px] size-[50px] text-2xl leading-12 justify-center items-center bg-primary-600 text-light rounded-full">
+                        <GoMail />
+                      </div>
+                    </div>
+                    <div>
+                      <h3 className="mb-[5px] text-light text-xl">E-Mail Me</h3>
+                      <p className="text-light">info@jennifer.com</p>
+                    </div>
+                  </div>
+                </Link>
+              </div>
             </div>
           </div>
           <div className="py-5 flex items-center border-t border-t-[#F7F3ED1A]">
