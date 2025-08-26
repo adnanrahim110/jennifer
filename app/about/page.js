@@ -15,12 +15,17 @@ const AboutPage = () => {
         <div className="flex flex-col gap-y-[60px] gap-x-5 items-center justify-center py-[100px]">
           <div className="w-full md:max-w-[1060px] flex flex-col items-center gap-2.5 p-2.5 text-center">
             <Subtitle>About me</Subtitle>
-            <div className="mb-[50px]">
-              <Title as="h2" italic="placeat, quo consectetur suscipit!">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Mollitia sit beatae Lorem ipsum dolor sit. placeat, quo
-                consectetur suscipit!
+            <div className="mb-3">
+              <Title as="h2" italic="Intention and Heart">
+                Jennifer Richards – Baking with Intention and Heart
               </Title>
+              <p>
+                Trained in food and nutrition, Jennifer Richards grew up with
+                flour-dusted hands and a love for the kitchen. Her journey spans
+                many roles, but her true home has always been with seasonal
+                ingredients, simple tools, and the joy of sharing food that
+                comforts, nourishes, and connects.
+              </p>
             </div>
           </div>
         </div>
