@@ -1,5 +1,8 @@
 
+import RouteLoadingOverlay from "@/components/system/RouteLoadingOverlay";
+import "@/styles/route-loader.css";
 import { Lora, Plus_Jakarta_Sans } from "next/font/google";
+import Script from "next/script";
 import AppLayout from "./AppLayout";
 import "./globals.css";
 
@@ -30,6 +33,62 @@ export default function RootLayout({ children }) {
       <body
         className={`${jakarta.variable} ${lora.variable} antialiased`}
       >
+        <Script id="boot-loader" strategy="beforeInteractive">{`
+          (function(){
+            try {
+              var host = document.createElement('div');
+              host.id = 'boot-route-loader';
+              host.style.cssText = 'position:fixed;inset:0;z-index:2147483646;display:flex;align-items:center;justify-content:center;background:#F7F3ED;pointer-events:auto;';
+              // minimal inline css for keyframes so it looks right even before CSS loads
+              var css = document.createElement('style');
+              css.textContent = '@keyframes rotSlow{to{transform:rotate(360deg)}}@keyframes shine{0%{transform:translateX(-100%);opacity:0}30%{opacity:1}100%{transform:translateX(300%);opacity:0}}@keyframes grainShift{0%{transform:translate3d(0,0,0)}100%{transform:translate3d(40px,40px,0)}}';
+              // markup
+              host.innerHTML =
+                '<div style="position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle at 50% 30%,rgba(90,80,68,0.06),transparent 60%)"></div>' +
+                '<div style="position:absolute;inset:0;opacity:.12;pointer-events:none;background-image:radial-gradient(rgba(0,0,0,0.07) 1px, transparent 1.2px), radial-gradient(rgba(0,0,0,0.05) 1px, transparent 1.2px);background-size:22px 22px,28px 28px;background-position:0 0,12px 12px;animation:grainShift 18s linear infinite;"></div>' +
+                '<div style="position:relative;width:200px;height:200px;">' +
+                  '<svg viewBox="0 0 200 200" width="100%" height="100%" style="position:absolute;inset:0" aria-hidden="true">' +
+                    '<defs>' +
+                      '<linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#5A5044"/><stop offset="100%" stop-color="#A08F79"/></linearGradient>' +
+                      '<mask id="dashMask"><circle cx="100" cy="100" r="74" stroke="white" stroke-width="10" stroke-dasharray="120 400" stroke-linecap="round">' +
+                        '<animate attributeName="stroke-dashoffset" from="0" to="-520" dur="1.8s" repeatCount="indefinite" />' +
+                      '</circle></mask>' +
+                    '</defs>' +
+                    '<circle cx="100" cy="100" r="74" stroke="#E9E2D8" stroke-width="10" />' +
+                    '<circle cx="100" cy="100" r="74" stroke="url(#ringGrad)" stroke-width="10" mask="url(#dashMask)" />' +
+                  '</svg>' +
+                  '<div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;">' +
+                    '<img src="/images/logo.png" alt="Site logo" style="height:64px;width:auto" />' +
+                  '</div>' +
+                  '<div style="position:absolute;inset:0;overflow:hidden;border-radius:28px;pointer-events:none;">' +
+                    '<div style="position:absolute;left:-33%;top:-16px;bottom:-16px;width:33%;transform:rotate(20deg);background:rgba(255,255,255,.35);filter:blur(6px);animation:shine 1.8s ease-in-out infinite;"></div>' +
+                  '</div>' +
+                '</div>';
+              host.appendChild(css);
+              // append as direct child of <html> so React never manages it
+              document.documentElement.appendChild(host);
+            } catch(_) {}
+          })();
+        `}</Script>
+
+        <Script id="boot-loader-remove" strategy="afterInteractive">{`
+          (function(){
+            var removed = false;
+            function hide() {
+              if (removed) return;
+              removed = true;
+              var el = document.getElementById('boot-route-loader');
+              if (!el) return;
+              el.style.transition = 'opacity .28s ease';
+              el.style.opacity = '0';
+              setTimeout(function(){ el && el.remove(); }, 320);
+            }
+            if (document.readyState === 'complete') hide();
+            else window.addEventListener('load', hide);
+          })();
+        `}</Script>
+
+        <RouteLoadingOverlay />
         <AppLayout>
           {children}
         </AppLayout>
