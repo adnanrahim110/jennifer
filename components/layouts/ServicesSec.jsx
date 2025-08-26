@@ -18,7 +18,7 @@ const ServicesSec = () => {
         <div className="px-2.5 bg-cover bg-center bg-no-repeat bg-[url('/images/hero-bg.png')] rounded-3lg">
           <div className="flex flex-col items-center flex-wrap gap-y-10 gap-x-5 py-[100px]">
             <div className="flex flex-col items-center md:w-[850px] p-2.5 gap-2.5 mb-5 text-center">
-              <Subtitle tone="light">Featured services</Subtitle>
+              <Subtitle tone="light">Seasoned Bliss</Subtitle>
               <Title
                 tone="light"
                 as="h2"

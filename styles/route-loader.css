@@ -1,0 +1,72 @@
+/* /styles/route-loader.css */
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+
+  .animate-rot-slow,
+  .grain-move,
+  .animate-shine {
+    animation: none !important;
+  }
+}
+
+/* Subtle moving grain on cream background */
+.grain-move {
+  background-image:
+    radial-gradient(rgba(0, 0, 0, 0.07) 1px, transparent 1.2px),
+    radial-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1.2px);
+  background-size: 22px 22px, 28px 28px;
+  background-position: 0 0, 12px 12px;
+  animation: grainShift 18s linear infinite;
+}
+
+@keyframes grainShift {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(40px, 40px, 0);
+  }
+}
+
+/* Conic sweep glow on the badge frame */
+.bg-conic-sweep {
+  background: conic-gradient(from 0deg,
+      rgba(160, 143, 121, 0.0) 0%,
+      rgba(160, 143, 121, 0.35) 25%,
+      rgba(160, 143, 121, 0.0) 50%,
+      rgba(160, 143, 121, 0.35) 75%,
+      rgba(160, 143, 121, 0.0) 100%);
+}
+
+.animate-rot-slow {
+  animation: rotSlow 2.6s linear infinite;
+}
+
+@keyframes rotSlow {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Soft shine pass over the glass badge */
+.animate-shine {
+  animation: shine 1.8s ease-in-out infinite;
+}
+
+@keyframes shine {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(300%);
+    opacity: 0;
+  }
+}

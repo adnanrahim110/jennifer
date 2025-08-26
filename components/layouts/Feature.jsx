@@ -12,40 +12,40 @@ const Feature = () => {
     <section className="px-2.5">
       <div className="py-[100px] flex flex-col items-center w-full gap-y-10 gap-x-5">
         <div className="p-2.5 md:w-[850px] flex items-center flex-col gap-2.5 mb-5 text-center">
-          <Subtitle>Our feature</Subtitle>
+          <Subtitle>Secrets to Success</Subtitle>
           <Title
             as="h2"
-            italic="your path to wellness"
+            italic="Seasonal Scones more than just a cookbook"
             after={[{ word: 3, src: "/images/feature-title-img.jpg" }]}
           >
-            Discover the unique features that set our spa experience apart and
-            elevate your path to wellness
+            Discover the unique touches that make Seasonal Scones more than just
+            a cookbook
           </Title>
         </div>
         <div className="p-2.5 flex gap-[30px] w-full">
           {[
             {
-              span: "Modern Interiors",
-              text: "This all-in-one treatment begins with a thorough skin analysis, followed by deep cleansing.",
-              title: "Elegant Trust Building",
+              span: "Seasonal Inspiration",
+              text: "Organized by spring, summer, autumn, and winter, every recipe captures the flavors, colors, and moods of the season.",
+              title: "",
               bg: "icon-feature-1.svg",
             },
             {
-              span: "Complimentary",
-              text: "This all-in-one treatment begins with a thorough skin analysis, followed by deep cleansing.",
-              title: "Experience Focused",
+              span: "Inclusive Baking",
+              text: "Each recipe includes easy swaps for gluten-free, dairy-free, and egg-free baking so everyone can enjoy.",
+              title: "",
               bg: "icon-feature-2.svg",
             },
             {
-              span: "Strict hygiene",
-              text: "This all-in-one treatment begins with a thorough skin analysis, followed by deep cleansing.",
-              title: "Holistic & Natural",
+              span: "Step-by-Step Confidence",
+              text: "Clear methods, practical pantry tips, and pro techniques guide you toward tender, golden scones every time.",
+              title: "",
               bg: "icon-feature-3.svg",
             },
             {
-              span: "Safety Standards",
-              text: "This all-in-one treatment begins with a thorough skin analysis, followed by deep cleansing.",
-              title: "Private Treatment",
+              span: "Stories & Tradition",
+              text: "Beyond recipes, Jennifer shares the history, pairings, and personal stories that make baking a ritual, not just a task.",
+              title: "",
               bg: "icon-feature-4.svg",
             },
           ].map((itm, idx) => {
@@ -62,7 +62,7 @@ const Feature = () => {
                 <div
                   onMouseEnter={() => setisActive(idx)}
                   className={cn(
-                    "h-full bg-light bg-no-repeat p-8 2xl:p-10 pt-[135px] 2xl:pt-[145px] rounded-3lg relative overflow-hidden cursor-pointer",
+                    "h-full bg-light bg-no-repeat p-8 2xl:p-10 pt-[135px] 2xl:pt-[130px] rounded-3lg relative overflow-hidden cursor-pointer",
                     "before:bg-primary-600 before:absolute before:left-0 before:w-full before:transition-all before:duration-[450ms] before:ease-in-out before:[background-size:101%_101%]",
                     active
                       ? "before:top-0 before:h-full before:rounded-none"
@@ -83,14 +83,14 @@ const Feature = () => {
                     >
                       {itm.text}
                     </p>
-                    <h3
+                    {/* <h3
                       className={cn(
                         "text-xl font-semibold transition-all duration-[400ms] ease-in-out",
                         active && "text-light"
                       )}
                     >
                       {itm.title}
-                    </h3>
+                    </h3> */}
                   </div>
                   <div className="absolute z-[2] top-10 left-10">
                     <span className="bg-light text-dark py-2 px-[15px] text-sm leading-[1.2em] border border-[#5A50441A] rounded-[100px]">

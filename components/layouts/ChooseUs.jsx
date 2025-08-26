@@ -10,12 +10,12 @@ import SVG from "../ui/svg";
 const ChooseUs = () => {
   return (
     <section className="px-2.5">
-      <div className="flex w-full items-center flex-wrap py-[100px]">
+      <div className="flex w-full items-center flex-wrap pb-[100px]">
         <div className="p-2.5 flex flex-col gap-2.5 items-start md:w-1/2">
-          <Subtitle>Why choose us</Subtitle>
+          <Subtitle>Trust Seasonal Scones</Subtitle>
           <div className="mb-2.5">
             <Title italic="wellness and care">
-              Why our clients trust us for their wellness and care
+              baking with heart and intention
             </Title>
           </div>
           <div>
@@ -24,12 +24,25 @@ const ChooseUs = () => {
               v={variants.fadeRise}
               viewport={{ once: true, amount: 0.5 }}
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consequuntur commodi perspiciatis quis qui maiores quas?
+              From seasonal flavors to allergy-friendly swaps, Jennifer Richards
+              brings warmth, clarity, and tradition to every page. Readers know
+              they’ll find recipes that are both approachable and deeply
+              meaningful.
             </MotionInView>
           </div>
           <div className="flex w-full flex-col pt-10 mt-[30px] gap-y-10 border-t border-[#5A50441A]">
-            {[...Array(2)].map((_, idx) => (
+            {[
+              {
+                title: "Rooted in the Seasons",
+                text: "Each chapter reflects spring, summer, autumn, and winter, offering flavors that match the rhythm of nature.",
+                icon: "dice",
+              },
+              {
+                title: "Inclusive & Adaptable",
+                text: "Gluten-free, dairy-free, and egg-free options ensure every baker can share in the joy.",
+                icon: "diamond",
+              },
+            ].map((item, idx) => (
               <MotionInView
                 as={motion.div}
                 v={variants.fadeRise}
@@ -38,23 +51,18 @@ const ChooseUs = () => {
                 delay={idx * 0.15}
                 className="flex"
               >
-                <div className="md:w-1/2 max-w-full relative">
+                <div className="md:w-[35%] max-w-full relative">
                   <div className="flex items-center pr-5">
                     <div className="grow-0 shrink-0 basis-auto">
                       <div className="mr-5 flex size-[50px] text-2xl rounded-full bg-primary-600 text-light items-center justify-center">
-                        <SVG
-                          svg={idx === 0 ? "dice" : "diamond"}
-                          className="size-[1em]"
-                        />
+                        <SVG svg={item.icon} className="size-[1em]" />
                       </div>
                     </div>
-                    <h3 className="text-xl leading-[1.3em]">
-                      Holistic Approach to wellness
-                    </h3>
+                    <h3 className="text-xl leading-[1.3em]">{item.title}</h3>
                   </div>
                 </div>
-                <div className="md:w-1/2 max-w-full relative pl-5 border-l border-[#5A50441A]">
-                  We treat the whole you-mind, body, and spirit-through sessions
+                <div className="md:w-[65%] max-w-full relative pl-5 border-l border-[#5A50441A]">
+                  {item.text}
                 </div>
               </MotionInView>
             ))}

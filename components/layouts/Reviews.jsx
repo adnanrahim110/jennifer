@@ -20,8 +20,8 @@ const Reviews = () => {
             <div className="flex w-full items-center p-2.5">
               <div className="md:w-1/2 flex flex-col items-start gap-2.5">
                 <Subtitle tone="light">Testimonials</Subtitle>
-                <Title tone="light" italic="talking about">
-                  The wellness experiences they can't stop talking about
+                <Title tone="light" italic="Food Lovers">
+                  Hear It From The Food Lovers
                 </Title>
               </div>
               <div className="md:w-1/2 flex pl-[30px] items-center flex-wrap gap-2.5 justify-end">

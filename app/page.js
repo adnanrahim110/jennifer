@@ -40,7 +40,7 @@ export default function Home() {
               </p>
             </div>
             <div>
-              <Button>Discover More</Button>
+              <Button href="/about">Discover More</Button>
             </div>
           </div>
           <div className="p-2.5 flex gap-[30px] flex-wrap w-full">
@@ -48,17 +48,20 @@ export default function Home() {
               {
                 image: "/images/s1.jpg",
                 mask: "flower.svg",
-                title: "Personalized Holistic Care",
+                title: "Seasonal Baking with Heart",
+                text: "Discover scones crafted for every season. From spring’s floral notes to winter’s hearty warmth, each recipe is designed to bring comfort, creativity, and a touch of tradition into your kitchen.",
               },
               {
                 image: "/images/s2.jpg",
                 mask: "flower2.svg",
-                title: "Comprehensive Wellness Plans",
+                title: "Allergy-Friendly & Adaptable",
+                text: "Bake with confidence, no matter your needs. Each recipe includes simple gluten-free, dairy-free, and egg-free swaps, so every baker can share the joy of homemade scones.",
               },
               {
                 image: "/images/s3.jpg",
                 mask: "brush_stroke.svg",
-                title: "Expert Health Guidance",
+                title: "Guided by Experience",
+                text: "With clear steps, pro tips, and thoughtful techniques, Jennifer Richards helps beginners and seasoned bakers alike achieve tender, golden results every time. Baking becomes less guesswork and more joy.",
               },
             ].map((moveItem, idx) => (
               <MotionInView
@@ -68,7 +71,7 @@ export default function Home() {
                 viewport={{ once: true, amount: 0.5 }}
                 key={idx}
                 delay={idx * 0.15}
-                className="md:w-[calc(33.33%_-_20px)] bg-light flex flex-col grow-0 shrink basis-auto p-10 rounded-3lg"
+                className="md:w-[calc(33.33%_-_20px)] bg-light flex flex-col grow-0 shrink basis-auto px-8 py-6 rounded-3lg"
               >
                 <div className="text-center">
                   <figure className="w-[180px] mb-10 inline-block">
@@ -84,10 +87,7 @@ export default function Home() {
                     />
                   </figure>
                   <h3 className="mb-[15px] text-xl">{moveItem.title}</h3>
-                  <p className="leading-[1.7em]">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Eum, distinctio.
-                  </p>
+                  <p className="leading-[1.7em] text-[15px]">{moveItem.text}</p>
                 </div>
               </MotionInView>
             ))}
@@ -96,7 +96,7 @@ export default function Home() {
       </section>
       <ServicesSec />
       <Feature />
-      <WhatWeDo />
+      {/* <WhatWeDo /> */}
       <ChooseUs />
       <Reviews />
       <Form />

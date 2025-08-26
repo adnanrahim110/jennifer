@@ -7,8 +7,8 @@ import { GoMail } from "react-icons/go";
 const Footer = () => {
   return (
     <footer className="px-5 mb-5">
-      <div className="rounded-3lg bg-[url('/images/hero-bg.png')] bg-center bg-cover bg-no-repeat px-2.5">
-        <div className="flex flex-col gap-y-10 pt-[100px]">
+      <div className="rounded-3lg bg-[url('/images/hero-bg.png')] bg-center bg-cover bg-no-repeat px-2.5 mx-auto md:max-w-[1480px]">
+        <div className="flex flex-col gap-y-10 pt-20">
           <div className="flex w-full">
             <div className="p-2.5 flex flex-col gap-[30px] md:w-1/2 pr-20">
               <div>
@@ -75,7 +75,7 @@ const Footer = () => {
                 ))}
               </ul>
             </div>
-            <div className="md:w-1/2 flex justify-end text-end">
+            <div className="md:w-1/2 flex justify-end text-end p-2.5">
               <p className="text-light">
                 Copyright &copy; {new Date().getFullYear()}. All rights reserved
               </p>

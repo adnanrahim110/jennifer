@@ -56,6 +56,32 @@
   :is(input, select, textarea) {
     @apply border border-[#5A50441A] focus:border-primary-600 w-full block py-[17px] px-5 rounded-2md text-black resize-none text-base placeholder:text-[#868686]/90;
   }
+
+  *::selection {
+    @apply bg-primary text-light;
+  }
+
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #efe7da;
+    border-radius: 50px;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background: var(--color-primary-700);
+    border-radius: 50px;
+    cursor: grab;
+
+  }
+
+  @supports not selector(::-webkit-scrollbar) {
+    * {
+      scrollbar-color: var(--color-primary-700) #efe7da;
+    }
+  }
 }
 
 @layer components {
