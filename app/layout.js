@@ -3,6 +3,7 @@ import RouteLoadingOverlay from "@/components/system/RouteLoadingOverlay";
 import "@/styles/route-loader.css";
 import { Lora, Plus_Jakarta_Sans } from "next/font/google";
 import Script from "next/script";
+import { Suspense } from "react";
 import AppLayout from "./AppLayout";
 import "./globals.css";
 
@@ -88,7 +89,9 @@ export default function RootLayout({ children }) {
           })();
         `}</Script>
 
-        <RouteLoadingOverlay />
+        <Suspense fallback={null}>
+          <RouteLoadingOverlay />
+        </Suspense>
         <AppLayout>
           {children}
         </AppLayout>

@@ -71,7 +71,7 @@ const BlogDetailPage = () => {
   // If no matching blog, send to 404
   useEffect(() => {
     if (!blog) {
-      router.replace("/404");
+      router.replace("/not-found");
     }
   }, [blog, router]);
 
