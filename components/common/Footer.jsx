@@ -15,16 +15,20 @@ const Footer = () => {
                 <img src="/images/logo-w.png" className="w-3xs" alt="" />
               </div>
               <p className="text-light">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus
-                hic nulla maiores quos error perferendis?
+                Every season has its own story to tell through food. These
+                recipes bring comfort, creativity, and a touch of tradition to
+                every table.
               </p>
             </div>
             <div className="md:w-1/2 p-2.5 flex flex-col gap-[15px]">
-              <h3 className="text-light text-xl">Subscribe My Newsletter</h3>
+              <h3 className="text-light text-xl">
+                Subscribe to My Kitchen Notes
+              </h3>
               <p className="text-light">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias,
-                unde. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Aut, culpa.
+                Discover seasonal recipes, baking secrets, and stories from
+                Jennifer’s kitchen. Each note is written to inspire your own
+                bakes, whether sweet, savory, or allergy-friendly. Fresh ideas,
+                delivered straight to your inbox.
               </p>
               <div className="mt-5">
                 <form>
