@@ -53,7 +53,9 @@ const Header = () => {
           </ul>
         </div>
         <div className="md:w-[21%] flex justify-end items-center">
-          <Button>Buy The Book Now</Button>
+          <Button href="https://amazon.com/dp/B0FKZ6PQKJ" target="_blank">
+            Buy The Book Now
+          </Button>
         </div>
       </div>
     </header>

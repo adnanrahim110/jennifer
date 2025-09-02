@@ -76,8 +76,14 @@ const Hero = ({
                   viewport={{ once: true, amount: 0.2 }}
                   className="mt-[30px] flex flex-wrap gap-y-5 gap-x-[30px]"
                 >
-                  <Button>Contact Now</Button>
-                  <Button variant="outline">My Services</Button>
+                  <Button href="/contact">Contact Now</Button>
+                  <Button
+                    variant="outline"
+                    href="https://amazon.com/dp/B0FKZ6PQKJ"
+                    target="_blank"
+                  >
+                    Buy The Book on Amazon
+                  </Button>
                 </MotionInView>
               </>
             )}

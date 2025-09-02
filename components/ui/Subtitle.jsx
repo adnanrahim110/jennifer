@@ -12,6 +12,7 @@ import React from "react";
  */
 
 /** @param {TitleProps} props */
+
 const Subtitle = ({ children, tone = "dark", className }) => {
   const tones = {
     dark: {

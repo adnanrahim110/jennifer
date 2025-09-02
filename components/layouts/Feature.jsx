@@ -25,26 +25,26 @@ const Feature = () => {
         <div className="p-2.5 flex gap-[30px] w-full">
           {[
             {
-              span: "Seasonal Inspiration",
-              text: "Organized by spring, summer, autumn, and winter, every recipe captures the flavors, colors, and moods of the season.",
+              span: "A Little History, A Lot of Heart",
+              text: "Fluffy, crumbly, and buttery, scones sit between a biscuit and a cake. With roots in Scotland and a place in British tea culture, they’ve become a beloved treat around the world.",
               title: "",
               bg: "icon-feature-1.svg",
             },
             {
-              span: "Inclusive Baking",
-              text: "Each recipe includes easy swaps for gluten-free, dairy-free, and egg-free baking so everyone can enjoy.",
+              span: "What Makes a Scone?",
+              text: "Simple ingredients—flour, butter, leavening, and cream or milk—create the base. Sweet versions shine with fruit or spice, while savory ones bring in herbs, cheese, or vegetables.",
               title: "",
               bg: "icon-feature-2.svg",
             },
             {
-              span: "Step-by-Step Confidence",
-              text: "Clear methods, practical pantry tips, and pro techniques guide you toward tender, golden scones every time.",
+              span: "The Pantry Essentials",
+              text: "Keep your kitchen ready with all-purpose or whole-wheat flour, fresh baking powder, cold butter, cream, and a touch of sugar. Add fruits, spices, or nuts for flavor and texture.",
               title: "",
               bg: "icon-feature-3.svg",
             },
             {
-              span: "Stories & Tradition",
-              text: "Beyond recipes, Jennifer shares the history, pairings, and personal stories that make baking a ritual, not just a task.",
+              span: "Adapt with Confidence",
+              text: "Scones aren’t fussy. Swap fruits, spices, or cheeses to suit the season. Gluten-free blends, plant-based butter, or dairy-free milks can be used too—just keep the flour-to-liquid balance steady for tender results.",
               title: "",
               bg: "icon-feature-4.svg",
             },

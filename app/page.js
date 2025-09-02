@@ -48,20 +48,20 @@ export default function Home() {
               {
                 image: "/images/s1.jpg",
                 mask: "flower.svg",
-                title: "Seasonal Baking with Heart",
-                text: "Discover scones crafted for every season. From spring’s floral notes to winter’s hearty warmth, each recipe is designed to bring comfort, creativity, and a touch of tradition into your kitchen.",
+                title: "Helpful Tools",
+                text: "A pastry cutter, mixing bowls, sharp knife, and a baking sheet lined with parchment are all you need. A cooling rack and grater make finishing touches easier.",
               },
               {
                 image: "/images/s2.jpg",
                 mask: "flower2.svg",
-                title: "Allergy-Friendly & Adaptable",
-                text: "Bake with confidence, no matter your needs. Each recipe includes simple gluten-free, dairy-free, and egg-free swaps, so every baker can share the joy of homemade scones.",
+                title: "Technique Matters",
+                text: "Cold ingredients give scones their signature flakiness. Mix gently, cut cleanly, and chill the dough before baking. These small steps create tall, golden scones.",
               },
               {
                 image: "/images/s3.jpg",
                 mask: "brush_stroke.svg",
-                title: "Guided by Experience",
-                text: "With clear steps, pro tips, and thoughtful techniques, Jennifer Richards helps beginners and seasoned bakers alike achieve tender, golden results every time. Baking becomes less guesswork and more joy.",
+                title: "Tips for Success",
+                text: "Keep butter and milk chilled. Avoid overmixing to prevent toughness. Use sharp cuts for a clean rise. Freeze shaped dough for later bakes. Add glazes or sugar sprinkles for a finishing touch.",
               },
             ].map((moveItem, idx) => (
               <MotionInView
@@ -92,6 +92,7 @@ export default function Home() {
               </MotionInView>
             ))}
           </div>
+
         </div>
       </section>
       <ServicesSec />
