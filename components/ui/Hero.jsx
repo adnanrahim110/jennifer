@@ -67,9 +67,8 @@ const Hero = ({
                   v={variants.fadeRise}
                   viewport={{ once: true, amount: 0.1 }}
                   className="text-light"
-                >
-                  {text}
-                </MotionInView>
+                  dangerouslySetInnerHTML={{ __html: text }}
+                />
                 <MotionInView
                   as={motion.div}
                   v={variants.fadeRise}

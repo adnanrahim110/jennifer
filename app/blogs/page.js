@@ -12,7 +12,7 @@ const BlogsPage = () => {
       <div className="py-[100px]">
         <div className="px-[15px] mx-auto max-w-[1300px] w-full">
           <div className="flex flex-wrap -mx-[15px] *:px-[15px] *:w-full *:grow-0 *:shrink-0 *:basis-auto">
-            {BLOGS.map((blog, idx) => (
+            {BLOGS.sort((a, b) => new Date(b.date) - new Date(a.date)).map((blog, idx) => (
               <div key={idx} className="md:w-1/2 lg:w-4/12">
                 <div className="h-[calc(100%_-_30px)] mb-[30px] group">
                   <div>

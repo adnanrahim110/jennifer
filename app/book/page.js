@@ -5,6 +5,7 @@ import Hero from "@/components/ui/Hero";
 import Img from "@/components/ui/Img";
 import Subtitle from "@/components/ui/Subtitle";
 import Title from "@/components/ui/Title";
+import { BOOK_REVIEWS } from "@/constants";
 import React from "react";
 
 const BookPage = () => {
@@ -42,7 +43,7 @@ const BookPage = () => {
         </div>
       </section>
 
-      <Reviews />
+      <Reviews reviews={BOOK_REVIEWS} />
       <Form />
     </>
   );

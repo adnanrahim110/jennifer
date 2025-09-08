@@ -10,7 +10,7 @@ import SVG from "../ui/svg";
 const ChooseUs = () => {
   return (
     <section className="px-2.5">
-      <div className="flex w-full items-center flex-wrap pb-[100px]">
+      <div className="flex w-full items-center flex-wrap py-[100px]">
         <div className="p-2.5 flex flex-col gap-2.5 items-start md:w-1/2">
           <Subtitle>Trust Seasonal Scones</Subtitle>
           <div className="mb-2.5">

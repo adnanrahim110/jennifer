@@ -11,7 +11,7 @@ import Img from "../ui/Img";
 import Subtitle from "../ui/Subtitle";
 import Title from "../ui/Title";
 
-const Reviews = () => {
+const Reviews = ({ reviews = REVIEWS }) => {
   return (
     <section>
       <div>
@@ -19,9 +19,9 @@ const Reviews = () => {
           <div className="flex flex-col w-full flex-wrap gap-y-[60px] gap-x-5 py-[100px]">
             <div className="flex w-full items-center p-2.5">
               <div className="md:w-1/2 flex flex-col items-start gap-2.5">
-                <Subtitle tone="light">Testimonials</Subtitle>
-                <Title tone="light" italic="Food Lovers">
-                  Hear It From The Food Lovers
+                <Subtitle tone="light">{reviews.subtitle}</Subtitle>
+                <Title tone="light" italic={reviews.italic}>
+                  {reviews.title}
                 </Title>
               </div>
               <div className="md:w-1/2 flex pl-[30px] items-center flex-wrap gap-2.5 justify-end">
@@ -74,7 +74,7 @@ const Reviews = () => {
                     spaceBetween={30}
                     className="reviews_slider"
                   >
-                    {REVIEWS.map((review, idx) => (
+                    {reviews.revs.map((review, idx) => (
                       <SwiperSlide key={idx}>
                         <div>
                           <div className="inline-block mb-[30px] relative">

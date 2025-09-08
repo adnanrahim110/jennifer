@@ -18,10 +18,10 @@ export default function Home() {
     <>
       <Hero
         withImg
-        subtitle="Seasonal Scones"
-        italic="Baking with Heart"
-        title="A Year of Sweet & Savory Baking with Heart"
-        text="This cookbook invites readers into the warmth of the kitchen with scones for every season. From fragrant lavender honey bakes in spring to hearty rosemary and roasted garlic in winter, Jennifer Richards blends tradition, creativity, and allergy-friendly tips to make scone baking approachable and joyful for all."
+        subtitle="Step Into a World of Calm & Care"
+        italic="elaxation and expert attention"
+        title="Experience the ultimate escape into relaxation and expert attention"
+        text={`Every visit is an invitation to pause, breathe, and let go of life’s stresses. From therapeutic massages to holistic facials, our services are designed to leave you renewed, centered, and cared for. <br/> Whether you need deep relaxation, skin restoration, or a peaceful reset, you’ll find a service that meets your needs with warmth and professionalism.`}
       />
       <section className="px-2.5">
         <div className="flex flex-col gap-y-[60px] gap-x-5 items-center justify-center py-[100px]">
@@ -97,7 +97,7 @@ export default function Home() {
       </section>
       <ServicesSec />
       <Feature />
-      {/* <WhatWeDo /> */}
+      <WhatWeDo />
       <ChooseUs />
       <Reviews />
       <Form />

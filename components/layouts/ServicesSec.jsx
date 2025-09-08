@@ -18,43 +18,42 @@ const ServicesSec = () => {
         <div className="px-2.5 bg-cover bg-center bg-no-repeat bg-[url('/images/hero-bg.png')] rounded-3lg">
           <div className="flex flex-col items-center flex-wrap gap-y-10 gap-x-5 py-[100px]">
             <div className="flex flex-col items-center md:w-[850px] p-2.5 gap-2.5 mb-5 text-center">
-              <Subtitle tone="light">Seasoned Bliss</Subtitle>
+              <Subtitle tone="light">treatments</Subtitle>
               <Title
                 tone="light"
                 as="h2"
                 italic="Jennifer Richards’s kitchen to yours."
               >
-                Bakes that bring warmth, flavor, and heart from Jennifer
-                Richards’s kitchen to yours.
+                A curated collection of treatments to refresh your body and mind
               </Title>
             </div>
             <div className="p-2.5 flex flex-wrap gap-[30px] w-full">
               {[
                 {
-                  title: "Seasonal Recipes",
-                  text: "These scones highlight spring, summer, autumn, and winter with flavors that match each season.",
-                  points: ["Sweet & savory creations", "Fresh ingredients"],
+                  title: "Signature Facials",
+                  text: "This treatment deeply cleanses, exfoliates, and hydrates the skin, leaving you with a radiant complexion.",
+                  points: ["Skin Glow Renewal", "Brighter, healthier skin"],
                   url: "",
                   svg: "trippleCircle",
                 },
                 {
-                  title: "Tips & Techniques",
-                  text: "Simple guidance for tender, flaky scones, perfect for beginners and experienced bakers alike.",
-                  points: ["Step-by-step methods", "Proven success tips"],
+                  title: "Therapeutic Massage",
+                  text: "A relaxing massage that improves circulation, eases tension, and restores balance to the body.",
+                  points: ["Stress relief", "Improved mobility"],
                   url: "",
                   svg: "dice",
                 },
                 {
-                  title: "Allergy-Friendly Swaps",
-                  text: "Adaptable recipes that include gluten-free, dairy-free, and egg-free options for every baker.",
-                  points: ["Inclusive choices", "Easy substitutions"],
+                  title: "Body Scrubs",
+                  text: "Gentle exfoliation treatments that smooth the skin and lock in deep hydration.",
+                  points: ["Smooth, glowing skin", "Lasting hydration"],
                   url: "",
                   svg: "diamond",
                 },
                 {
-                  title: "Author’s Journey",
-                  text: "Jennifer’s path from early lessons in flour and butter to writing a cookbook full of love.",
-                  points: ["Rooted in tradition", "Shared with heart"],
+                  title: "Reflexology",
+                  text: "Targeted pressure therapy designed to encourage relaxation and overall wellbeing.",
+                  points: ["Energy balance", "Holistic care"],
                   url: "",
                   svg: "target",
                 },
