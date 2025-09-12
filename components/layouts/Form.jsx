@@ -9,9 +9,9 @@ const Form = () => {
       <div className="flex flex-col items-center gap-y-[60px] gap-x-5 w-full py-[100px]">
         <div className="p-2.5 md:w-[1024px] flex flex-col items-center text-center gap-2.5">
           <Subtitle>Contact me</Subtitle>
-          <Title italic="share your own baking story.">
-            Write to us anytime for questions about Seasonal Scones, recipe
-            tips, or to share your own baking story.
+          <Title italic="take the next step toward balance and renewal">
+            Wellness starts with connection. Get in touch today and take the
+            next step toward balance and renewal.
           </Title>
         </div>
         <div className="p-2.5 flex gap-[30px] mb-2.5 w-full">
