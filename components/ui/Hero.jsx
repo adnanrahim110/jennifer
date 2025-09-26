@@ -73,9 +73,11 @@ const Hero = ({
                   as={motion.div}
                   v={variants.fadeRise}
                   viewport={{ once: true, amount: 0.2 }}
-                  className="mt-[30px] flex flex-wrap gap-y-5 gap-x-[30px]"
+                  className="mt-[30px] flex flex-wrap gap-4"
                 >
-                  <Button href="/contact">Contact Now</Button>
+                  <Button href="/holistic-nutrition-evaluation">
+                    Start Your Evaluation
+                  </Button>
                   <Button
                     variant="outline"
                     href="https://amazon.com/dp/B0FKZ6PQKJ"

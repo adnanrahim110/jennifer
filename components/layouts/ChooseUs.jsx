@@ -2,6 +2,7 @@
 import { MotionInView, variants } from "@/utils/motion";
 import { motion } from "motion/react";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import Subtitle from "../ui/Subtitle";
 import Title from "../ui/Title";
@@ -91,7 +92,10 @@ const ChooseUs = () => {
               delay={0.2}
               className="md:size-[180px] left-1/2 absolute flex items-center bottom-0 z-[1] -translate-x-1/2"
             >
-              <div className="max-w-full bg-primary-600 bg-[url('/images/elements/arrow.svg')] p-[22px] bg-center bg-no-repeat [background-size:14%_auto] border-[3px] border-white rounded-full size-[180px] font-lora text-[32px] font-medium leading-[1.2em] tracking-[4.1px] animate-spin [animation-duration:25s] relative">
+              <Link
+                href="/holistic-nutrition-evaluation"
+                className="max-w-full bg-primary-600 hover:bg-primary-700 bg-[url('/images/elements/arrow.svg')] p-[22px] bg-center bg-no-repeat [background-size:14%_auto] border-[3px] border-white rounded-full size-[180px] font-lora text-[32px] font-medium leading-[1.2em] tracking-[4.1px] animate-spin [animation-duration:25s] relative transition-all duration-300 ease-in-out"
+              >
                 <div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -111,12 +115,13 @@ const ChooseUs = () => {
                         href="#e-path-25dec2a"
                         startOffset="0%"
                       >
-                        Contact Us * Contact Us * Contact Us *{" "}
+                        Start your Evaluation * Start your Evaluation * Start
+                        your Evaluation *{" "}
                       </textPath>
                     </text>
                   </svg>
                 </div>
-              </div>
+              </Link>
             </MotionInView>
           </div>
         </div>

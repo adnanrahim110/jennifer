@@ -33,28 +33,24 @@ const ServicesSec = () => {
                   title: "Signature Facials",
                   text: "This treatment deeply cleanses, exfoliates, and hydrates the skin, leaving you with a radiant complexion.",
                   points: ["Skin Glow Renewal", "Brighter, healthier skin"],
-                  url: "",
                   svg: "trippleCircle",
                 },
                 {
                   title: "Therapeutic Massage",
                   text: "A relaxing massage that improves circulation, eases tension, and restores balance to the body.",
                   points: ["Stress relief", "Improved mobility"],
-                  url: "",
                   svg: "dice",
                 },
                 {
                   title: "Body Scrubs",
                   text: "Gentle exfoliation treatments that smooth the skin and lock in deep hydration.",
                   points: ["Smooth, glowing skin", "Lasting hydration"],
-                  url: "",
                   svg: "diamond",
                 },
                 {
                   title: "Reflexology",
                   text: "Targeted pressure therapy designed to encourage relaxation and overall wellbeing.",
                   points: ["Energy balance", "Holistic care"],
-                  url: "",
                   svg: "target",
                 },
               ].map((item, idx) => (
@@ -137,13 +133,13 @@ const ServicesSec = () => {
                   </div>
                   <div className="relative z-[2]">
                     <Link
-                      href={item.url}
+                      href="/holistic-nutrition-evaluation"
                       className={cn(
                         "inline-flex items-center select-none font-bold leading-[1em] cursor-pointer relative z-[1] group",
                         isActive === idx ? "text-light" : "text-primary-700"
                       )}
                     >
-                      <span>View More</span>
+                      <span>Start your Evaluation</span>
                       <span>
                         <FiArrowUpRight className="text-2xl ml-3.5 group-hover:rotate-45 transition-transform duration-[400ms]" />
                       </span>

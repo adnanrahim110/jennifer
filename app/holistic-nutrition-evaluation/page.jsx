@@ -57,7 +57,7 @@ const initialState = {
   support: [],
   notes: "",
   consent: false,
-  hp: "", // honeypot - we'll keep it in state but not send it
+  hp: "",
 };
 
 const opts = {
@@ -109,7 +109,7 @@ export default function IntakePage() {
   const [errors, setErrors] = useState({});
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
-  const [serverMsg, setServerMsg] = useState(""); // only for errors
+  const [serverMsg, setServerMsg] = useState("");
   const [showModal, setShowModal] = useState(false);
 
   const successText =
@@ -173,7 +173,6 @@ export default function IntakePage() {
     try {
       setLoading(true);
 
-      // >>> IMPORTANT: strip honeypot before sending <<<
       const { hp, ...payload } = data;
 
       const res = await fetch(
@@ -193,10 +192,10 @@ export default function IntakePage() {
       }
 
       setSubmitted(true);
-      setShowModal(true); // success modal
-      setServerMsg(""); // no green banner anymore
+      setShowModal(true);
+      setServerMsg("");
       setLoading(false);
-      setData(initialState); // reset form
+      setData(initialState);
     } catch (err) {
       setServerMsg("Network error. Please try again.");
       setLoading(false);
@@ -219,7 +218,6 @@ export default function IntakePage() {
             onSubmit={onSubmit}
             className="w-full flex flex-col items-center gap-6"
           >
-            {/* Honeypot (kept, but it won't be sent anymore) */}
             <input
               type="text"
               tabIndex={-1}
@@ -655,29 +653,74 @@ export default function IntakePage() {
             </SectionCard>
 
             <SectionCard type="warning" title="Disclaimer & Consent">
-              <div className="space-y-3">
-                <p className="text-sm text-zinc-700">
-                  I am a Holistic Nutrition Practitioner. The information in
-                  this consultation is for educational and wellness purposes and
-                  not a substitute for medical advice, diagnosis, or treatment.
-                  Consult your healthcare provider for medical conditions or
-                  before making significant changes.
-                </p>
-                <div ref={refs.consent}>
-                  <Checkbox
-                    label={<span>I understand and agree.</span>}
-                    checked={data.consent}
-                    onChange={(e) => set("consent", e.target.checked)}
-                  />
+              <div className="space-y-5 text-sm leading-relaxed text-zinc-800">
+                <div className="flex items-start gap-3 rounded-2xl border border-amber-200 bg-amber-50/60 p-4">
+                  <div className="mt-0.5 shrink-0 rounded-xl bg-amber-100 p-2 text-amber-700">
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M12 3l8.66 5v8L12 21 3.34 16V8L12 3z"
+                        fill="currentColor"
+                        opacity=".15"
+                      />
+                      <path
+                        d="M12 8v5m0 3h.01"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                      />
+                    </svg>
+                  </div>
+                  <div className="space-y-1">
+                    <p>
+                      I am a Holistic Nutrition Practitioner, and my role is to
+                      guide and support you on your personalized journey to
+                      better health through nutrition and lifestyle
+                      recommendations. The information provided in this
+                      consultation is for educational and wellness purposes only
+                      and is not a substitute for medical advice, diagnosis, or
+                      treatment from a licensed healthcare provider.
+                    </p>
+                    <p className="italic font-light">
+                      If you have a medical condition, are taking prescription
+                      medications, or have specific dietary concerns, please
+                      consult with your doctor, registered dietitian, or
+                      healthcare provider before making significant changes to
+                      your diet or lifestyle.
+                    </p>
+                    <p className="font-semibold">
+                      By proceeding with this consultation, you acknowledge that
+                      you take full responsibility for your health decisions.
+                    </p>
+                  </div>
                 </div>
-                {errors.consent && (
-                  <p className="text-xs text-red-600">{errors.consent}</p>
-                )}
+
+                <div className="rounded-2xl bg-white/70 p-4 ring-1 ring-zinc-200">
+                  <div ref={refs.consent} className="flex items-start gap-3">
+                    <Checkbox
+                      label={
+                        <span className="text-[13px]">
+                          I understand and agree.
+                        </span>
+                      }
+                      checked={data.consent}
+                      onChange={(e) => set("consent", e.target.checked)}
+                    />
+                  </div>
+                  {errors.consent && (
+                    <p className="mt-2 text-xs text-red-600">
+                      {errors.consent}
+                    </p>
+                  )}
+                </div>
               </div>
             </SectionCard>
 
             <div className="w-full md:w-[1024px] flex flex-col items-end gap-2">
-              {/* Only show messages for errors */}
               {serverMsg && !submitted && (
                 <p className="text-sm" style={{ color: "#b91c1c" }}>
                   {serverMsg}
@@ -691,7 +734,6 @@ export default function IntakePage() {
         </div>
       </section>
 
-      {/* Success Modal */}
       <Modal
         open={showModal}
         onClose={() => setShowModal(false)}

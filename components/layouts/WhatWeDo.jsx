@@ -20,18 +20,13 @@ const WhatWeDo = () => {
                   Thoughtfully designed for your ultimate comfort
                 </Title>
               </div>
-              {/* <div className="mb-[30px]">
-                <MotionInView
-                  as={motion.p}
-                  v={variants.fadeRise}
-                  viewport={{ once: true, amount: 0.5 }}
-                >
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Facere nisi nesciunt unde? Odio, consectetur cumque!
-                </MotionInView>
-              </div> */}
-              <div>
-                <Button>Contact now</Button>
+              <div className="flex items-center gap-2 flex-wrap">
+                <Button href="/contact" small tone="dark">
+                  Contact now
+                </Button>
+                <Button href="/holistic-nutrition-evaluation" small>
+                  Start your Evaluation
+                </Button>
               </div>
             </div>
           </div>

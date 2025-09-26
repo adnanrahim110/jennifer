@@ -48,7 +48,7 @@ const Button = ({
     "hover:before:[transform:rotate3d(0,0,1,0deg)] before:transition-all before:duration-300 before:ease-linear";
 
   const beforeBg =
-    variant === "outline" ? "before:bg-primary-600" : "before:bg-light";
+    variant === "outline" ? "before:bg-primary-600" : "before:bg-white";
 
   const size = small
     ? "py-2.5 px-4 text-sm"
