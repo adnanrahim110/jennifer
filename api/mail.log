@@ -1,0 +1,968 @@
+[2025-09-26T19:01:29+02:00] [admin][2] SERVER -> CLIENT: 220 smtp.gmail.com ESMTP 98e67ed59e1d1-3342a46b0c9sm2609603a91.4 - gsmtp
+
+[2025-09-26T19:01:29+02:00] [admin][1] CLIENT -> SERVER: EHLO localhost
+
+[2025-09-26T19:01:29+02:00] [admin][2] SERVER -> CLIENT: 250-smtp.gmail.com at your service, [119.73.97.23]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[2025-09-26T19:01:29+02:00] [admin][1] CLIENT -> SERVER: AUTH LOGIN
+
+[2025-09-26T19:01:30+02:00] [admin][2] SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[2025-09-26T19:01:30+02:00] [admin][1] CLIENT -> SERVER: [credentials hidden]
+[2025-09-26T19:01:30+02:00] [admin][2] SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[2025-09-26T19:01:30+02:00] [admin][1] CLIENT -> SERVER: [credentials hidden]
+[2025-09-26T19:01:31+02:00] [admin][2] SERVER -> CLIENT: 235 2.7.0 Accepted
+
+[2025-09-26T19:01:31+02:00] [admin][1] CLIENT -> SERVER: MAIL FROM:<jen.tranquiltouch@gmail.com>
+
+[2025-09-26T19:01:31+02:00] [admin][2] SERVER -> CLIENT: 250 2.1.0 OK 98e67ed59e1d1-3342a46b0c9sm2609603a91.4 - gsmtp
+
+[2025-09-26T19:01:31+02:00] [admin][1] CLIENT -> SERVER: RCPT TO:<jen.tranquiltouch@gmail.com>
+
+[2025-09-26T19:01:32+02:00] [admin][2] SERVER -> CLIENT: 250 2.1.5 OK 98e67ed59e1d1-3342a46b0c9sm2609603a91.4 - gsmtp
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: DATA
+
+[2025-09-26T19:01:32+02:00] [admin][2] SERVER -> CLIENT: 354 Go ahead 98e67ed59e1d1-3342a46b0c9sm2609603a91.4 - gsmtp
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: Date: Fri, 26 Sep 2025 19:01:26 +0200
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: To: jen.tranquiltouch@gmail.com
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: From: Jennifer Richards <jen.tranquiltouch@gmail.com>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: Reply-To: Jesse Robles <hasopogive@mailinator.com>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: Subject: New Intake Submission: Jesse Robles
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: Message-ID: <Gl5qcTCbMkAUCG9K6e6LWGMiTjWcK2ZFNJmtyHq4@localhost>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: X-Mailer: PHPMailer 6.10.0 (https://github.com/PHPMailer/PHPMailer)
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: MIME-Version: 1.0
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: Content-Type: multipart/alternative;
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:  boundary="b1=_Gl5qcTCbMkAUCG9K6e6LWGMiTjWcK2ZFNJmtyHq4"
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: 
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: --b1=_Gl5qcTCbMkAUCG9K6e6LWGMiTjWcK2ZFNJmtyHq4
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: Content-Type: text/plain; charset=us-ascii
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: 
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: New intake submission from Jesse Robles <hasopogive@mailinator.com>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: 
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: --b1=_Gl5qcTCbMkAUCG9K6e6LWGMiTjWcK2ZFNJmtyHq4
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: Content-Type: text/html; charset=UTF-8
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: Content-Transfer-Encoding: quoted-printable
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: 
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: <!doctype html>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: <html>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: 
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: <head>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: 1" />
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8" =
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: />
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   <title>New Intake Submission</title>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   <style>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     /* some clients ignore style tags, so we mostly inline below */
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     @media (prefers-color-scheme: dark) {
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:       body {
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:         background: #0b0f19 !important;
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:       }
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     }
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   </style>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: </head>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: 
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: <body
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   style=3D"margin:0;padding:24px;background:#f6f7fb;font-family:ui-sans-ser=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: if, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;">
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   <span style=3D"display:none;visibility:hidden;opacity:0;color:transparent=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: ;height:0;width:0;">
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     New intake received
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   </span>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   <table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" border=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: =3D"0" width=3D"100%">
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <tr>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:       <td align=3D"center">
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:         <table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" bo=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: rder=3D"0" width=3D"640"
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:           style=3D"max-width:640px;background:#ffffff;border-radius:18px;bo=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: x-shadow:0 6px 24px rgba(0,0,0,.06);overflow:hidden;">
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:           <tr>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:             <td style=3D"padding:20px 28px;background:#0f172a;color:#ffffff=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: ;">
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:               <div style=3D"font-size:18px;font-weight:700;letter-spacing:.=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: 3px;">Jennifer Richards</div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:               <div style=3D"font-size:12px;opacity:.85;margin-top:4px;">New=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:  intake submission</div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:             </td>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:           </tr>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: 
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:           <tr>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:             <td style=3D"padding:24px 28px;">
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:               <h2 style=3D"margin:0 0 8px;font-size:20px;color:#0f172a;">In=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: take Details</h2>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:               <p style=3D"margin:0 0 2px;font-size:13px;color:#6b7280;">Bel=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: ow are the sections exactly as submitted.</p>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:             </td>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:           </tr>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: 
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:           <tr>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:             <td style=3D"padding:0 28px 6px;">
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:               <table role=3D"presentation" width=3D"100%" cellpadding=3D"0"=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:  cellspacing=3D"0" border=3D"0">
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:                =20
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   <tr>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <td style=3D"padding:16px 0;border-top:1px solid #eef0f3;">
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:       <h3 style=3D"margin:0 0 8px;font-size:16px;color:#0f172a;">Basic Info=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: </h3>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:      =20
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   <div style=3D"margin:6px 0;">
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <div style=3D"font-size:12px;color:#6b7280;margin-bottom:2px;">Name</di=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: v>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <div style=3D"font-size:14px;color:#111827;">Jesse Robles</div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   </div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   <div style=3D"margin:6px 0;">
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <div style=3D"font-size:12px;color:#6b7280;margin-bottom:2px;">Email</d=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: iv>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <div style=3D"font-size:14px;color:#111827;">hasopogive@mailinator.com<=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: /div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   </div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   <div style=3D"margin:6px 0;">
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <div style=3D"font-size:12px;color:#6b7280;margin-bottom:2px;">Age</div=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: >
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <div style=3D"font-size:14px;color:#111827;">43</div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   </div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   <div style=3D"margin:6px 0;">
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <div style=3D"font-size:12px;color:#6b7280;margin-bottom:2px;">Gender</=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <div style=3D"font-size:14px;color:#111827;">Fugiat sit voluptat</div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   </div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   <div style=3D"margin:6px 0;">
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <div style=3D"font-size:12px;color:#6b7280;margin-bottom:2px;">Height</=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <div style=3D"font-size:14px;color:#111827;">Sit distinctio Ame</div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   </div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   <div style=3D"margin:6px 0;">
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <div style=3D"font-size:12px;color:#6b7280;margin-bottom:2px;">Weight</=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <div style=3D"font-size:14px;color:#111827;">Harum eligendi ea mo</div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   </div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   <div style=3D"margin:6px 0;">
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <div style=3D"font-size:12px;color:#6b7280;margin-bottom:2px;">Weight G=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: oal</div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <div style=3D"font-size:14px;color:#111827;">Obcaecati tempora un</div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   </div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     </td>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   </tr>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   <tr>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <td style=3D"padding:16px 0;border-top:1px solid #eef0f3;">
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:       <h3 style=3D"margin:0 0 8px;font-size:16px;color:#0f172a;">Health & M=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: edical History</h3>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:      =20
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   <div style=3D"margin:6px 0;">
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <div style=3D"font-size:12px;color:#6b7280;margin-bottom:2px;">Diagnose=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: d conditions</div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <div style=3D"font-size:14px;color:#111827;">Mollit voluptatem ul</div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   </div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   <div style=3D"margin:6px 0;">
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <div style=3D"font-size:12px;color:#6b7280;margin-bottom:2px;">Medicati=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: ons or supplements</div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <div style=3D"font-size:14px;color:#111827;">Magni tempore Nam t</div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   </div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   <div style=3D"margin:6px 0;">
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <div style=3D"font-size:12px;color:#6b7280;margin-bottom:2px;">Allergie=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: s or sensitivities</div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <div style=3D"font-size:14px;color:#111827;">Voluptates quae omni</div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   </div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   <div style=3D"margin:6px 0;">
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <div style=3D"font-size:12px;color:#6b7280;margin-bottom:2px;">Diagnose=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: d deficiencies</div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <div style=3D"font-size:14px;color:#111827;">Odit aut nihil natus</div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   </div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   <div style=3D"margin:6px 0;">
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <div style=3D"font-size:12px;color:#6b7280;margin-bottom:2px;">Family h=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: istory</div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <div style=3D"font-size:14px;color:#111827;"><span style=3D"display:inl=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: ine-block;margin:2px 4px;padding:6px 10px;border:1px solid #e5e7eb;border-r=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: adius:999px;font-size:12px;line-height:1;color:#111827;background:#fff;">Di=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: abetes</span></div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   </div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   <div style=3D"margin:6px 0;">
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <div style=3D"font-size:12px;color:#6b7280;margin-bottom:2px;">Regular =
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: symptoms</div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <div style=3D"font-size:14px;color:#111827;"><span style=3D"display:inl=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: ine-block;margin:2px 4px;padding:6px 10px;border:1px solid #e5e7eb;border-r=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: adius:999px;font-size:12px;line-height:1;color:#111827;background:#fff;">Co=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: nstipation</span><span style=3D"display:inline-block;margin:2px 4px;padding=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: :6px 10px;border:1px solid #e5e7eb;border-radius:999px;font-size:12px;line-=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: height:1;color:#111827;background:#fff;">Gas/discomfort after eating</span>=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: <span style=3D"display:inline-block;margin:2px 4px;padding:6px 10px;border:=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: 1px solid #e5e7eb;border-radius:999px;font-size:12px;line-height:1;color:#1=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: 11827;background:#fff;">Frequent headaches</span><span style=3D"display:inl=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: ine-block;margin:2px 4px;padding:6px 10px;border:1px solid #e5e7eb;border-r=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: adius:999px;font-size:12px;line-height:1;color:#111827;background:#fff;">Jo=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: int pain/inflammation</span><span style=3D"display:inline-block;margin:2px =
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: 4px;padding:6px 10px;border:1px solid #e5e7eb;border-radius:999px;font-size=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: :12px;line-height:1;color:#111827;background:#fff;">Mood swings or anxiety<=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: /span><span style=3D"display:inline-block;margin:2px 4px;padding:6px 10px;b=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: order:1px solid #e5e7eb;border-radius:999px;font-size:12px;line-height:1;co=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: lor:#111827;background:#fff;">Other</span></div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   </div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     </td>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   </tr>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   <tr>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <td style=3D"padding:16px 0;border-top:1px solid #eef0f3;">
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:       <h3 style=3D"margin:0 0 8px;font-size:16px;color:#0f172a;">Lifestyle =
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: & Dietary Habits</h3>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:      =20
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   <div style=3D"margin:6px 0;">
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <div style=3D"font-size:12px;color:#6b7280;margin-bottom:2px;">Typical =
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: day of eating</div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <div style=3D"font-size:14px;color:#111827;">Culpa quo adipisicin</div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   </div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   <div style=3D"margin:6px 0;">
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <div style=3D"font-size:12px;color:#6b7280;margin-bottom:2px;">How ofte=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: n home-cooked</div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <div style=3D"font-size:14px;color:#111827;"></div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   </div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   <div style=3D"margin:6px 0;">
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <div style=3D"font-size:12px;color:#6b7280;margin-bottom:2px;">Water in=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: take</div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <div style=3D"font-size:14px;color:#111827;"></div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   </div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   <div style=3D"margin:6px 0;">
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <div style=3D"font-size:12px;color:#6b7280;margin-bottom:2px;">Coffee</=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <div style=3D"font-size:14px;color:#111827;">Yes =E2=80=94 Labore cum r=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: em aut c cups/day</div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   </div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   <div style=3D"margin:6px 0;">
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <div style=3D"font-size:12px;color:#6b7280;margin-bottom:2px;">Tea</div=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: >
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <div style=3D"font-size:14px;color:#111827;">Yes =E2=80=94 Velit odit i=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: llo ut</div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   </div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   <div style=3D"margin:6px 0;">
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <div style=3D"font-size:12px;color:#6b7280;margin-bottom:2px;">Alcohol<=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: /div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <div style=3D"font-size:14px;color:#111827;">Yes =E2=80=94 Vero nihil d=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: eserunt</div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   </div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   <div style=3D"margin:6px 0;">
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <div style=3D"font-size:12px;color:#6b7280;margin-bottom:2px;">Sugary d=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: rinks</div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <div style=3D"font-size:14px;color:#111827;">No =E2=80=94 Commodi aut a=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: dipisic</div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   </div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   <div style=3D"margin:6px 0;">
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <div style=3D"font-size:12px;color:#6b7280;margin-bottom:2px;">Restrict=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: ions</div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <div style=3D"font-size:14px;color:#111827;">Rerum fugiat in elit</div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   </div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   <div style=3D"margin:6px 0;">
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <div style=3D"font-size:12px;color:#6b7280;margin-bottom:2px;">Sleep ho=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: urs</div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <div style=3D"font-size:14px;color:#111827;">Ut autem modi quidem</div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   </div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   <div style=3D"margin:6px 0;">
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <div style=3D"font-size:12px;color:#6b7280;margin-bottom:2px;">Sleep qu=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: ality</div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <div style=3D"font-size:14px;color:#111827;"></div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   </div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   <div style=3D"margin:6px 0;">
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <div style=3D"font-size:12px;color:#6b7280;margin-bottom:2px;">Exercise=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: </div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <div style=3D"font-size:14px;color:#111827;">Nulla est ad eligend</div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   </div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   <div style=3D"margin:6px 0;">
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <div style=3D"font-size:12px;color:#6b7280;margin-bottom:2px;">Exercise=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:  frequency</div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <div style=3D"font-size:14px;color:#111827;">Laboris quo mollitia</div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   </div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   <div style=3D"margin:6px 0;">
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <div style=3D"font-size:12px;color:#6b7280;margin-bottom:2px;">Stress</=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <div style=3D"font-size:14px;color:#111827;">Accusantium veritati</div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   </div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     </td>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   </tr>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   <tr>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <td style=3D"padding:16px 0;border-top:1px solid #eef0f3;">
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:       <h3 style=3D"margin:0 0 8px;font-size:16px;color:#0f172a;">Digestion =
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: & Metabolic Health</h3>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:      =20
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   <div style=3D"margin:6px 0;">
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <div style=3D"font-size:12px;color:#6b7280;margin-bottom:2px;">Regular =
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: bowel movements</div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <div style=3D"font-size:14px;color:#111827;"></div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   </div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   <div style=3D"margin:6px 0;">
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <div style=3D"font-size:12px;color:#6b7280;margin-bottom:2px;">Frequenc=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: y</div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <div style=3D"font-size:14px;color:#111827;">Aliqua Soluta est d</div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   </div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   <div style=3D"margin:6px 0;">
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <div style=3D"font-size:12px;color:#6b7280;margin-bottom:2px;">Bloating=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:  after eating</div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <div style=3D"font-size:14px;color:#111827;"></div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   </div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   <div style=3D"margin:6px 0;">
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <div style=3D"font-size:12px;color:#6b7280;margin-bottom:2px;">Food int=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: olerances</div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <div style=3D"font-size:14px;color:#111827;">Quaerat assumenda la</div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   </div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     </td>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   </tr>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   <tr>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <td style=3D"padding:16px 0;border-top:1px solid #eef0f3;">
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:       <h3 style=3D"margin:0 0 8px;font-size:16px;color:#0f172a;">Goals & Ex=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: pectations</h3>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:      =20
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   <div style=3D"margin:6px 0;">
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <div style=3D"font-size:12px;color:#6b7280;margin-bottom:2px;">Primary =
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: goals</div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <div style=3D"font-size:14px;color:#111827;"><span style=3D"display:inl=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: ine-block;margin:2px 4px;padding:6px 10px;border:1px solid #e5e7eb;border-r=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: adius:999px;font-size:12px;line-height:1;color:#111827;background:#fff;">In=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: creased energy</span><span style=3D"display:inline-block;margin:2px 4px;pad=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: ding:6px 10px;border:1px solid #e5e7eb;border-radius:999px;font-size:12px;l=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: ine-height:1;color:#111827;background:#fff;">Improved digestion</span><span=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:  style=3D"display:inline-block;margin:2px 4px;padding:6px 10px;border:1px s=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: olid #e5e7eb;border-radius:999px;font-size:12px;line-height:1;color:#111827=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: ;background:#fff;">Hormonal balance</span><span style=3D"display:inline-blo=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: ck;margin:2px 4px;padding:6px 10px;border:1px solid #e5e7eb;border-radius:9=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: 99px;font-size:12px;line-height:1;color:#111827;background:#fff;">Reduced i=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: nflammation</span><span style=3D"display:inline-block;margin:2px 4px;paddin=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: g:6px 10px;border:1px solid #e5e7eb;border-radius:999px;font-size:12px;line=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: -height:1;color:#111827;background:#fff;">Better sleep</span></div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   </div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   <div style=3D"margin:6px 0;">
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <div style=3D"font-size:12px;color:#6b7280;margin-bottom:2px;">Challeng=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: es</div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <div style=3D"font-size:14px;color:#111827;">Repudiandae non elig</div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   </div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   <div style=3D"margin:6px 0;">
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <div style=3D"font-size:12px;color:#6b7280;margin-bottom:2px;">Foods to=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:  add or reduce</div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <div style=3D"font-size:14px;color:#111827;">Fuga Ipsum magni h</div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   </div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   <div style=3D"margin:6px 0;">
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <div style=3D"font-size:12px;color:#6b7280;margin-bottom:2px;">Support =
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: requested</div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <div style=3D"font-size:14px;color:#111827;"><span style=3D"display:inl=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: ine-block;margin:2px 4px;padding:6px 10px;border:1px solid #e5e7eb;border-r=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: adius:999px;font-size:12px;line-height:1;color:#111827;background:#fff;">Me=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: al planning</span><span style=3D"display:inline-block;margin:2px 4px;paddin=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: g:6px 10px;border:1px solid #e5e7eb;border-radius:999px;font-size:12px;line=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: -height:1;color:#111827;background:#fff;">Grocery shopping strategies</span=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: ><span style=3D"display:inline-block;margin:2px 4px;padding:6px 10px;border=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: :1px solid #e5e7eb;border-radius:999px;font-size:12px;line-height:1;color:#=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: 111827;background:#fff;">Recipe ideas</span></div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   </div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   <div style=3D"margin:6px 0;">
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <div style=3D"font-size:12px;color:#6b7280;margin-bottom:2px;">Addition=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: al notes</div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     <div style=3D"font-size:14px;color:#111827;">Voluptatem rem eu de</div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   </div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     </td>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   </tr>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:               </table>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:             </td>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:           </tr>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: 
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:           <tr>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:             <td style=3D"padding:20px 28px;background:#fafafa;border-top:1p=
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: x solid #eef0f3;color:#6b7280;font-size:12px;">
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:               Sent automatically by Jennifer Richards Intake System
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:             </td>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:           </tr>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:         </table>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: 
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:         <div style=3D"height:16px"></div>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: 
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:       </td>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:     </tr>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER:   </table>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: </body>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: 
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: </html>
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: 
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: 
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: --b1=_Gl5qcTCbMkAUCG9K6e6LWGMiTjWcK2ZFNJmtyHq4--
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: 
+
+[2025-09-26T19:01:32+02:00] [admin][1] CLIENT -> SERVER: .
+
+[2025-09-26T19:01:33+02:00] [admin][2] SERVER -> CLIENT: 250 2.0.0 OK  1758906093 98e67ed59e1d1-3342a46b0c9sm2609603a91.4 - gsmtp
+
+[2025-09-26T19:01:33+02:00] [admin][1] CLIENT -> SERVER: QUIT
+
+[2025-09-26T19:01:34+02:00] [admin][2] SERVER -> CLIENT: 221 2.0.0 closing connection 98e67ed59e1d1-3342a46b0c9sm2609603a91.4 - gsmtp
+
+[2025-09-26T19:01:34+02:00] [admin] Message-ID: <Gl5qcTCbMkAUCG9K6e6LWGMiTjWcK2ZFNJmtyHq4@localhost>
+[2025-09-26T19:01:35+02:00] [user][2] SERVER -> CLIENT: 220 smtp.gmail.com ESMTP d9443c01a7336-27ed6ac27d4sm57309115ad.135 - gsmtp
+
+[2025-09-26T19:01:35+02:00] [user][1] CLIENT -> SERVER: EHLO localhost
+
+[2025-09-26T19:01:36+02:00] [user][2] SERVER -> CLIENT: 250-smtp.gmail.com at your service, [119.73.97.23]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[2025-09-26T19:01:36+02:00] [user][1] CLIENT -> SERVER: AUTH LOGIN
+
+[2025-09-26T19:01:37+02:00] [user][2] SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[2025-09-26T19:01:37+02:00] [user][1] CLIENT -> SERVER: [credentials hidden]
+[2025-09-26T19:01:37+02:00] [user][2] SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[2025-09-26T19:01:37+02:00] [user][1] CLIENT -> SERVER: [credentials hidden]
+[2025-09-26T19:01:38+02:00] [user][2] SERVER -> CLIENT: 235 2.7.0 Accepted
+
+[2025-09-26T19:01:38+02:00] [user][1] CLIENT -> SERVER: MAIL FROM:<jen.tranquiltouch@gmail.com>
+
+[2025-09-26T19:01:38+02:00] [user][2] SERVER -> CLIENT: 250 2.1.0 OK d9443c01a7336-27ed6ac27d4sm57309115ad.135 - gsmtp
+
+[2025-09-26T19:01:38+02:00] [user][1] CLIENT -> SERVER: RCPT TO:<hasopogive@mailinator.com>
+
+[2025-09-26T19:01:38+02:00] [user][2] SERVER -> CLIENT: 250 2.1.5 OK d9443c01a7336-27ed6ac27d4sm57309115ad.135 - gsmtp
+
+[2025-09-26T19:01:38+02:00] [user][1] CLIENT -> SERVER: DATA
+
+[2025-09-26T19:01:39+02:00] [user][2] SERVER -> CLIENT: 354 Go ahead d9443c01a7336-27ed6ac27d4sm57309115ad.135 - gsmtp
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER: Date: Fri, 26 Sep 2025 19:01:34 +0200
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER: To: Jesse Robles <hasopogive@mailinator.com>
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER: From: Jennifer Richards <jen.tranquiltouch@gmail.com>
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER: Subject: =?UTF-8?Q?Jennifer_Richards_=E2=80=94_We_received_your_intake?=
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER: Message-ID: <AgkftgXhM6vZFuFztuoGEX0FfGN3D9dqvG2CuAs50@localhost>
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER: X-Mailer: PHPMailer 6.10.0 (https://github.com/PHPMailer/PHPMailer)
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER: MIME-Version: 1.0
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER: Content-Type: multipart/alternative;
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER:  boundary="b1=_AgkftgXhM6vZFuFztuoGEX0FfGN3D9dqvG2CuAs50"
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER: 
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER: --b1=_AgkftgXhM6vZFuFztuoGEX0FfGN3D9dqvG2CuAs50
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER: Content-Type: text/plain; charset=us-ascii
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER: 
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER: Thanks Jesse Robles, we received your intake at Jennifer Richards.
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER: 
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER: --b1=_AgkftgXhM6vZFuFztuoGEX0FfGN3D9dqvG2CuAs50
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER: Content-Type: text/html; charset=us-ascii
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER: 
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER: <!doctype html>
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER: <html>
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER: 
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER: <head>
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER:   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER:   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER:   <title>We received your intake</title>
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER: </head>
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER: 
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER: <body
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER:   style="margin:0;padding:24px;background:#f6f7fb;font-family:ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;">
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER:   <span style="display:none;visibility:hidden;opacity:0;color:transparent;height:0;width:0;">
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER:     Thank you for your submission
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER:   </span>
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER:   <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER:     <tr>
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER:       <td align="center">
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER:         <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="640"
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER:           style="max-width:640px;background:#ffffff;border-radius:18px;box-shadow:0 6px 24px rgba(0,0,0,.06);overflow:hidden;">
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER:           <tr>
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER:             <td style="padding:24px 28px;background:#0f172a;color:#ffffff;">
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER:               <div style="font-size:18px;font-weight:700;letter-spacing:.3px;">Jennifer Richards</div>
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER:               <div style="font-size:12px;opacity:.85;margin-top:4px;">We received your intake</div>
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER:             </td>
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER:           </tr>
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER: 
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER:           <tr>
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER:             <td style="padding:24px 28px;">
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER:               
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER:   <tr><td style="padding:12px 0;color:#111827;font-size:14px;">Hi Jesse Robles,</td></tr>
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER:   <tr><td style="padding:4px 0 12px;color:#111827;font-size:14px;">Thanks for completing the Holistic Nutrition Evaluation. We have received your details and will review your intake shortly.</td></tr>
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER:   <tr><td style="padding:12px 0;color:#6b7280;font-size:12px;">If you did not submit this form, you can ignore this email.</td></tr>
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER: 
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER: 
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER:               <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-top:16px;">
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER:                 <tr>
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER:                   <td>
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER:                     <a href="#"
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER:                       style="display:inline-block;background:#0f172a;color:#fff;text-decoration:none;padding:10px 16px;border-radius:12px;font-size:14px;">
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER:                       Visit our site
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER:                     </a>
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER:                   </td>
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER:                 </tr>
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER:               </table>
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER:             </td>
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER:           </tr>
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER: 
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER:           <tr>
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER:             <td style="padding:20px 28px;background:#fafafa;border-top:1px solid #eef0f3;color:#6b7280;font-size:12px;">
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER:               This is an automatic message from Jennifer Richards.
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER:             </td>
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER:           </tr>
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER:         </table>
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER:       </td>
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER:     </tr>
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER:   </table>
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER: </body>
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER: 
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER: </html>
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER: 
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER: 
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER: --b1=_AgkftgXhM6vZFuFztuoGEX0FfGN3D9dqvG2CuAs50--
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER: 
+
+[2025-09-26T19:01:39+02:00] [user][1] CLIENT -> SERVER: .
+
+[2025-09-26T19:01:40+02:00] [user][2] SERVER -> CLIENT: 250 2.0.0 OK  1758906100 d9443c01a7336-27ed6ac27d4sm57309115ad.135 - gsmtp
+
+[2025-09-26T19:01:40+02:00] [user][1] CLIENT -> SERVER: QUIT
+
+[2025-09-26T19:01:40+02:00] [user][2] SERVER -> CLIENT: 221 2.0.0 closing connection d9443c01a7336-27ed6ac27d4sm57309115ad.135 - gsmtp
+
+[2025-09-26T19:01:40+02:00] [user] Message-ID: <AgkftgXhM6vZFuFztuoGEX0FfGN3D9dqvG2CuAs50@localhost>
